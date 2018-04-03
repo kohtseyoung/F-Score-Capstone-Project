@@ -127,8 +127,10 @@ Having selected companies from a list under NASDAQ in 2017/2018, some of these c
 **Availability of Financial Information from MorningStar**
 
 First, the companies’ entire fiscal period is identified from the “Margin % Sales” row under key ratio statement as seen below:
+
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Margin%25Sales.png)
  
-Under the assumption that a company is not publicly-listed based if the company does not have any shares/equity, Number of Shares is used as an indicator to identify the company’s start and end date. First, the total sum for each year column without shares (etc. NA) is tabulated. Second, this sum is added to the first date as per above. There is no needed to take end date/delisting date into account as using the list of companies extracted from NASDAQ in 2017/2018 already nullify this potential issue. 
+Under the assumption that a company is not publicly-listed based if the company does not have any shares/equity, Number of Shares is used as an indicator to identify the company’s start and end date. First, the total sum for each year column without shares (etc. NA) is tabulated. Second, this sum is added to the first date as per above to acquire the start date. There is no needed to take end date/delisting date into account as using the list of companies extracted from NASDAQ in 2017/2018 already nullify this potential issue. 
 
 **Availability of Trading Share Price from Yahoo Finance**
 
