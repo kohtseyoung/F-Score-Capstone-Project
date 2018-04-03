@@ -41,3 +41,11 @@ Research Overview
 The overall research process is summarized in the flowchart as follows:
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Research%20Layout.png)
+
+As seen from the table above, the main three data sources are from NASDAQ, Morning Star and Yahoo Finance. From these three data sources, the raw data files are company list, income statement, balance sheet, cash flow statement, key ratio share price and industry.  The raw data after processed by R are grouped into the following: F-Score Indicators, Grouping (High/Low) and Holding Return. Lastly, based on the results from the analysis of the processed data, it will provide evidence on whether following the hypotheses raised (Please refer to *Research Analysis* Section) can be confirm or falsify.
+
+To organize the research process and its findings, the report is split into the following sections to further elaborate on each topic area:-
+
+1.	Data Collection
+2.	Data Wrangling
+3.	Research Analysis
