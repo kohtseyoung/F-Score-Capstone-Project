@@ -52,13 +52,13 @@ To organize the research process and its findings, the report is split into the 
 
 Data Collection
 ---------------
-**Financial Information**
+### Financial Information
 
 The pool of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. For financial information that is required for F-Score testing, Morning Star is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
 Due to the large number of companies’ information extracted, the function “try” and “sys.sleep” is used to ensure that all information is captured. Besides, a second run of extraction is performed if there are unusually large amount of missing values noted.
 
-**Share Prices and Holding Returns**
+### Share Prices and Holding Returns
 
 The R Package “Quantmod”, specifically its’ function “getSymbols” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. The matter is resolved by creating a new environment to store these newly created objects. Under the assumption that no objects will be created if no data are available from Yahoo Finance, the function “ls” is used to list out the objects created in the new environment, and subsequently compared against the original company list used to identify companies with missing data. 
 Instead of computing the returns from the share prices, the function “yearlyReturn” is used to extract the annual returns of each company. Furthermore, the function “adjustOHLC” is used in conjunction to readjust returns on share price based on stock-splits or reverse stock-splits during the period. 
@@ -76,8 +76,10 @@ Before diving head-in into the extraction of the respective indicators, only rel
 **_Indicator 1 – Return on Assets (ROA)_**
 
 ROA under F-Score and the ROA under Morning Star are computed differently. The former uses beginning year-end assets, while the latter using average assets as the denominator for computing ROA. F-Score and MorningStar’s ROA shall be coined as ROA(Beginning Assets) and ROA(Average Assets) respectively. As such, we are to re-compute the 1st 5 years ROA using information from the income statement and balance sheet data. For the last 5 years, the beginning of the year assets is recomputed based on the MorningStar’s ROA extracted from the key ratio statement. The formulas are as follows:
-Beginning Year Assets = Current Year Net Income/ROA(Average Assets) – Year End Assets
-ROA (Beginning Assets) = Current Year Net Income/ Beginning Year Assets
+
+>Beginning Year Assets = Current Year Net Income/ROA(Average Assets) – Year End Assets
+
+>ROA (Beginning Assets) = Current Year Net Income/ Beginning Year Assets
 
 **_Indicator 2 – Operating Cash Flow (CFO)_**
 
@@ -99,6 +101,7 @@ The respective leverages shall be coined as Leverage (Average) and Leverage (Yea
 The latest 5 years long-term debt is extracted from MorningStar’s balance sheet while the earliest 5 years are derived from the Leverage (Year-end) extracted from the key ratio statement. The formulas are as follows:
 
 >Leverage (Average) = Leverage (Year-end)* Year-end Assets /100*Average Assets
+
 >Change in Leverage is subsequently the difference between current year and past year Leverage (Average).
 
 **_Indicator 6 – Change in Current Ratio_**
