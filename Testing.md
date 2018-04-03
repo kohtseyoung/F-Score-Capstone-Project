@@ -52,19 +52,21 @@ To organize the research process and its findings, the report is split into the 
 
 Data Collection
 ---------------
+**Financial Information*
 
-**Financial Information**
 The pool of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. For financial information that is required for F-Score testing, Morning Star is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
+
 Due to the large number of companies’ information extracted, the function “try” and “sys.sleep” is used to ensure that all information is captured. Besides, a second run of extraction is performed if there are unusually large amount of missing values noted.
 
 **Share Prices and Holding Returns**
+
 The R Package “Quantmod”, specifically its’ function “getSymbols” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. The matter is resolved by creating a new environment to store these newly created objects. Under the assumption that no objects will be created if no data are available from Yahoo Finance, the function “ls” is used to list out the objects created in the new environment, and subsequently compared against the original company list used to identify companies with missing data. 
 Instead of computing the returns from the share prices, the function “yearlyReturn” is used to extract the annual returns of each company. Furthermore, the function “adjustOHLC” is used in conjunction to readjust returns on share price based on stock-splits or reverse stock-splits during the period. 
 
 
 Data Wrangling
 --------------
-**1. Financial Information**
+### 1. Financial Information
 The information from income statement, balance sheet and cash flow statement consist of 5 year data, while key ratio consists of 10 years of data. As a business cycle tend to be around 10 years, using 10 years’ worth of financial data would be helpful to show the usefulness of the model across an entire business cycle. It should be noted that 10 years’ worth of data would be computed into a 9 year series as some indicators rely on changes between two years, as such, the 1st year data cannot be computed solely by itself.
 
 **F-Score Indicators**
@@ -106,7 +108,7 @@ Current Ratio data is extracted from key ratio statement.  Change in current rat
 
 Number of Shares data is extracted from key ratio statement.  Change in Shares is the difference between current year and past year Number of Shares.
 
-**_Indicator 8 – Change in Gross Profit Margi_n**
+**_Indicator 8 – Change in Gross Profit Margin_**
 
 Gross profit margin data is extracted from key ratio statement.  Change in gross profit margin is the difference between current year and past year gross profit margin.
 
@@ -114,7 +116,7 @@ Gross profit margin data is extracted from key ratio statement.  Change in gross
 
 Asset turnover is defined as total sales scaled by Beginning Year Assets. Sales are extracted from key ratio statement while Beginning Year Assets as computed as per above.  Change in asset turnover is the difference between current year and past year asset turnover.
 
-**2. Financial Fiscal Date Period**
+### 2. Financial Fiscal Date Period
 
 Having selected companies from a list under NASDAQ in 2017/2018, some of these companies would not have been publicly listed for the entire past 10 years since 2008. Therefore, the holding period of these companies would be based on public listed date up till 2017 or its delisted date, whichever earlier. Such information is gathered based on two fronts, from the availability of financial data and trading share price on MorningStar and Yahoo Finance respectively. Only under the circumstance that information is available from both sources for the same period, F-Score can be computed.
 
@@ -133,12 +135,12 @@ The extraction of earlier trading share price dates is similar to the above from
 As both data sets (Financial Information and Share Price) are required, the later of the two dates is used as the companies’ starting date for testing.  However, it should be noted that the starting date, if based on trading share price is minus by 1, as the financial information prior to the trading share price date can be used to assess for F-Score.  The formula in R would be as follows:
 if_else(Financial Information Date > Trading Share Price Date , Financial Information, Trading Share Price Date -1))
 
-**3. Share Price and Returns**
+### 3. Share Price and Returns
 
 Data wrangling for share price is quite straight forward as data pulled from quantmod are clear and easy to use. The yearly holding returns extracted from quantmod are subsequently filtered using the Financial Fiscal Date Period as computed above. 
 Besides, quarterly returns were used to compute returns from Q2 to the following year Q1, in order to take into account for information time lag. However, this return is currently not in-use for the current testing as early preliminary testing shows that yearly returns are more accurate.
 
-**4. Combining F-Score and Holding Returns**
+### 4. Combining F-Score and Holding Returns
 
 Combining F-Score and Holding Returns is relatively straightforward with the R package “dplyr”. To ensure that the companies’ shares are readily available for trades, an average daily trading volume of 10,000 is set as a basis for trade liquidity requirement. Holding returns with 0% are further filtered out as they represent trades inactivity.  Besides, holding returns above 200% are filtered out as outliers.   
 
