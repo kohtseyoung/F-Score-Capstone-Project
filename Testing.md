@@ -40,4 +40,4 @@ Research Overview
 -----------------
 The overall research process is summarized in the flowchart as follows:
 
-
+![](F-Score-Capstone-Project-/Research%20Layout.png)
