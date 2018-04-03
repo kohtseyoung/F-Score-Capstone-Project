@@ -67,7 +67,7 @@ Instead of computing the returns from the share prices, the function “yearlyRe
 
 ## Data Collection Limitation & Biases
 
-Data Collection is limited by broken links or unavailable data from each data source. 8 companies have been removed from the sample population due to no Financial Information available at MorningStar. 
+Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance. 
 
 Data Wrangling
 --------------
@@ -158,3 +158,25 @@ Combining F-Score and Holding Returns is relatively straightforward with the R p
 
 Additional information is added such as industry/sector groupings for each company for more detailed testing. 
 
+Research Analysis
+-----------------
+As noted under the literature review, F-Score analysis will be performed on the selected sample population to reinforce the notion that F-Score is still relevant as an investment tool today. In addition, the original F-Score grouping will be reassessed to potentially expand or contract the High/Low F-Score groupings. The above hypothesis serves to incorporate another well-known financial concept (M&M
+
+**Hypothesis 1:**
+The difference between High F-Score and Low F-Score group’s market adjusted return = 0
+Null:  The difference between High F-Score and Low F-Score group’s market adjusted return is not 0
+
+**Hypothesis 2:**
+The High/Low grouping based on F-Score is consistent with the original F-Score grouping
+Null: The High/Low grouping based on F-Score is not consistent with the original F-Score grouping
+
+**Hypothesis 3:**
+Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
+Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
+
+**Hypothesis 4:**
+If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
+Null:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
+
+**Hypothesis 5:**
+If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
