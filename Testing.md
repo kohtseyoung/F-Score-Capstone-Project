@@ -54,7 +54,9 @@ Data Collection
 ---------------
 ### Financial Information
 
-The pool of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. For financial information that is required for F-Score testing, Morning Star is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
+The sample population of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. The total number in the original list is 3288. For completeness of data, companies with insufficient information (etc. Market Cap = 0, no Sector/Industry information) are filtered out. Besides, we also removed companies that belong to the finance sector due to the uniqueness of its financial reporting standard for consistency purposes. The final sample population numbered to 2053.
+
+For financial information that is required for F-Score testing, MorningStar is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
 Due to the large number of companies’ information extracted, the function “try” and “sys.sleep” is used to ensure that all information is captured. Besides, a second run of extraction is performed if there are unusually large amount of missing values noted.
 
@@ -63,6 +65,9 @@ Due to the large number of companies’ information extracted, the function “t
 The R Package “Quantmod”, specifically its’ function “getSymbols” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. The matter is resolved by creating a new environment to store these newly created objects. Under the assumption that no objects will be created if no data are available from Yahoo Finance, the function “ls” is used to list out the objects created in the new environment, and subsequently compared against the original company list used to identify companies with missing data. 
 Instead of computing the returns from the share prices, the function “yearlyReturn” is used to extract the annual returns of each company. Furthermore, the function “adjustOHLC” is used in conjunction to readjust returns on share price based on stock-splits or reverse stock-splits during the period. 
 
+## Data Collection Limitation & Biases
+
+Data Collection is limited by broken links or unavailable data from each data source. 8 companies have been removed from the sample population due to no Financial Information available at MorningStar. 
 
 Data Wrangling
 --------------
