@@ -52,7 +52,7 @@ To organize the research process and its findings, the report is split into the 
 
 Data Collection
 ---------------
-**Financial Information*
+**Financial Information**
 
 The pool of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. For financial information that is required for F-Score testing, Morning Star is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
@@ -97,8 +97,9 @@ The difference between CFO and ROA as previously computed.
 There is a difference between the denominator of the leverage ratio between F-Score and MorningStar, the former being the average assets during the year, the latter being year-end assets.
 The respective leverages shall be coined as Leverage (Average) and Leverage (Year-end) respectively.
 The latest 5 years long-term debt is extracted from MorningStar’s balance sheet while the earliest 5 years are derived from the Leverage (Year-end) extracted from the key ratio statement. The formulas are as follows:
-Leverage (Average) = Leverage (Year-end)* Year-end Assets /100*Average Assets
-Change in Leverage is subsequently the difference between current year and past year Leverage (Average).
+
+>Leverage (Average) = Leverage (Year-end)* Year-end Assets /100*Average Assets
+>Change in Leverage is subsequently the difference between current year and past year Leverage (Average).
 
 **_Indicator 6 – Change in Current Ratio_**
 
@@ -133,7 +134,8 @@ The extraction of earlier trading share price dates is similar to the above from
 **Setting Starting Date by comparing and combining both data sets**
 
 As both data sets (Financial Information and Share Price) are required, the later of the two dates is used as the companies’ starting date for testing.  However, it should be noted that the starting date, if based on trading share price is minus by 1, as the financial information prior to the trading share price date can be used to assess for F-Score.  The formula in R would be as follows:
-if_else(Financial Information Date > Trading Share Price Date , Financial Information, Trading Share Price Date -1))
+
+>if_else(Financial Information Date > Trading Share Price Date , Financial Information, Trading Share Price Date -1))
 
 ### 3. Share Price and Returns
 
