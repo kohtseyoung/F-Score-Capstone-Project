@@ -6,6 +6,9 @@ This study seeks to examine the usefulness of Joseph D. Piotroski’s F-Score wh
 
 Literature Review and Research's Motivation
 -----------------
+
+**Introduction to F-Score**
+
 The F-score is a widely known performance/investment strategy due to its simplicity and accessibility. It uses public published information readily available for investor to separate strong performers from weak performers among high book-to-market firms. A score is computed based on 9 criteria categorized into 3 different groups and are summarized as follows:
 
 
@@ -28,6 +31,9 @@ The F-score is a widely known performance/investment strategy due to its simplic
 |8|	Change in Gross Margin	1 point if it is higher in the current year compared to the previous one, 0 otherwise
 |9	|Change in Asset Turnover ratio	1 point if it is higher in the current year compared to the previous one, 0 otherwise
 
+
+The total score is tabulated and companies are split into two main groups, High F-Score and Low F-Score. High F-Score consists of companies with score between 7-9, while low F-Score consists of companies with score between 1-3. Based on the grouping, an investor can make informed investment decisions (etc. holding companies' shares with high F-Score and short companies's shares with low F-Score).
+
 **Relevancy of F-Score in Today’s Economy**
 
 The empirical study of the F-Score is based on companies selected from 1976 and 1996. Since then, in the past 20 years, the overall economy landscape has experience massive seismic shifts; from multiple recessions (Dot.com bubble burst from 1997-2001, The Great Recession from 2007-2012) to the explosive growth of tech-based companies and slow-decline of manufacturing firms. Besides, there have been monumental changes to organization structure of companies, many opting for a more flat-based structure rather than a hierarchical one to cope with the ever-changing economy. This has in turn impact on how companies’ resources and finance are managed. 
@@ -35,6 +41,27 @@ The empirical study of the F-Score is based on companies selected from 1976 and 
 While the aforementioned events may undermine the credibility of the F-Score, amongst the many changes, stronger financial regulations and corporate governance have been consistently implemented across the decades, aiming for higher financial reporting transparency and accountability. These developments have strengthened F-Score’s core idea of utilizing historical financial performance data to predict strong performers.  To name one, the enactment of the Sarbanes-Oxley Act also known the “Public Company Accounting Reform and Investor Protection Act in response to the financial scandal revolving Enron mandates strict reforms to improve financial disclosures from  corporations from possibly fraudulent activities. With better financial reporting, financial data provided from companies can be used more reliably for analytic purposes.
 
 In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances serve as a strong motivation to reassess the credibility of the F-Score and modify the indicators accordingly if needed to suit the stance of today’s economy. 
+
+**Applicability of F-Score**  
+
+F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. Therefore, the rationale behind each F-Score’s indicators serves to reflect the performance of such firms while taking their financial characteristics into account.
+
+Using F-Score as a general tool for evaluating companies’ return regardless of their book-to-market value may prove to be not as effective. To assess the applicability of F-Score on all companies, F-Score indicators relevant specifically to high book-to-market companies should be discerned and their basis evaluated. 
+After assessing each indicator, the F-Score Indicator “Change in Number of Shares” stands out as the sole indicator specifically to address high book-to-market companies. As noted from Joseph D. Piotroksi’s F-Score Paper:
+
+>“….Financially distressed firms that raise external capital could be signalling their inability to generate sufficient internal funds to service future obligations. Moreover, the fact that these firms are willing to issue equity when their stock prices are likely to be depressed (i.e., high cost of capital) highlights the poor financial condition facing these firms”
+
+While addressing the specific nature of a high book-to-market company, the change in number of shares can serve as a signalling indicator for other companies, if the Pecking Order Theory is taken into account.
+The Pecking Order Theory states that for a company will raise its capital in the following order due to asymmetric information between the company’s manager and outsider investors: Internal funds, long-term debts and issuance of shares. The capital financing from these three sources provides different signalling to investors:- 
+
+•	Using internal funds demonstrates a company’s capability to generate excess cash flow
+
+•	Incurring long-term debts reflects a company’s earnings growth to outstrip the interest rates
+
+•	Issuing share signals to investors that management believe that its shares are overvalued, thus taking advantage of the over-valuation
+
+
+Thus, the increase in number of shares may also indeed serve as a negative indicator for all companies instead of specifically high book-to-market companies, albeit for differing reasons. Based on the assessment above, F-Score may serve as a valuable analysis tool for all companies.
 
 Research Overview
 -----------------
