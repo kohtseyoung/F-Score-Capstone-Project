@@ -256,8 +256,10 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |6.7708 |1279.8|1.946e-11|					
 
+**Findings**
+From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 14% compared to Low F-Score companies. Besides, High F-Score companies have lower returns volatilty compared to Low F-Score companies infered from the summary data and plots. 
 
-From the T-test performed, there is a signficant difference between High and Low F-Score holding returns. Therefore, we can reject the null hypothesis. High F-Score have an additional mean returns of 14% compared to Low F-Score companies. Besides, High F-Score demontrates lower volatilty of returns compared to Low F-Score which can be seen both from the summary data and plots. There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positive skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present (approx. 450%) between High and Low F-Score companies.
+There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positive skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present (approx. 450%) between High and Low F-Score companies.
 
 
 
