@@ -244,6 +244,6 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 |Violin Plot|Scatter Line Plot|
 |:-------------------------:|:-------------------------:
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20Violin.png)  |  ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20GG_Line-1.jpg)|
+<img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20Violin.png" width="473" height="550" />  | <img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/GG%20Group.png" width="473" height="550" />|
 
 
