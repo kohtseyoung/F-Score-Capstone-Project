@@ -65,7 +65,7 @@ Thus, the increase in number of shares may also indeed serve as a negative indic
 
 Research Motivation
 ------------------
-The aim of this research is to reinforce the notion that F-Score is still relevant as an investment tool today ass noted under the literature review.  In addition, F-Score’s effectiveness will also be evaluated under different scenarios. This are being tested under the following hypothesis:- 
+The aim of this research is to reinforce the notion that F-Score is still relevant as an investment tool today ass noted under the literature review.  In addition, F-Score’s effectiveness will also be evaluated under different scenarios. These are being tested under the following hypothesis:- 
 
 **Hypothesis 1:**
 
