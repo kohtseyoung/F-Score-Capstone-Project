@@ -264,6 +264,23 @@ There are more High F-Score companies in the sample as compared to Low F-Score i
 
 Therefore, companies with High F-Score possess higher returns and lower return volailty, transalting to lower investment risk as compared to companies with Low F-Score. 
 
+### Hypothesis 2
+
+Empirical results show that the original F-Score grouping can optionally include other F-Score to enchance returns. 
+
+**Summary Data**
+
+|F Score	|Holding_Return	|Std	|No. Samples	|Q25		|Q50		|Q75		|TukeyHD Test Grouping	|
+|:-------------:|:-------------:|:-----:|:-------------:|:-------------:|:-------------:|:-------------:|:---------------------:|
+|1	|-0.006647731	|0.6174855	|41		|-0.4125	|-0.02941176	|0.3948447	|a			|
+|2	|0.022621788	|0.5455277	|215		|-0.34911824	|-0.005154639	|0.3318125	|a			|
+|3	|0.060879898	|0.6006458	|671		|-0.34401515	|-0.002374894	|0.3174056	|a			|	
+|4	|0.075679465	|0.5794739	|1402		|-0.30562691	|0.013423422	|0.3785532	|a			|
+|5	|0.090042094	|0.5222998	|2094		|-0.23257775	|0.042982615	|0.3396489	|a			|
+|6	|0.151246499	|0.4879108	|2133		|-0.13352859	|0.09880363	|0.3659083	|b			|
+|7	|0.164036233	|0.4310036	|1652		|-0.10098112	|0.12584966	|0.3805613	|b			|
+|8	|0.224432484	|0.4442882	|952		|-0.04909918	|0.15356031	|0.4398432	|b			|
+|9	|0.247001731	|0.4737493	|246		|-0.01906319	|0.16189193	|0.4707094	|b			|
 
 
 
