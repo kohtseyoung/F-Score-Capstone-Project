@@ -69,36 +69,39 @@ The aim of this research is to reinforce the notion that F-Score is still releva
 
 **Hypothesis 1:**
 
-The difference between High F-Score and Low F-Score group’s market adjusted return = 0
-Null:  The difference between High F-Score and Low F-Score group’s market adjusted return is not 0
+Null: The difference between High F-Score and Low F-Score group’s market adjusted return = 0
+
+Alternate:  The difference between High F-Score and Low F-Score group’s market adjusted return is not 0
 
 *Explanation*: The hypothesis serves to evaluate F-Score general usefulness as an investment indicator by testing whether High F-Score companies have superior returns compared to Low F-Score companies.
 
 **Hypothesis 2:**
 
-The High/Low grouping based on F-Score is consistent with the original F-Score grouping
-Null: The High/Low grouping based on F-Score is not consistent with the original F-Score grouping
+Null: The High/Low grouping based on F-Score is consistent with the original F-Score grouping
+
+Alternate: The High/Low grouping based on F-Score is not consistent with the original F-Score grouping
 
 *Explanation*: The hypothesis serves to check whether there can be any positive adjustments made to the grouping (High/Low) of the F-Score such as incorporating/excluding certain scores in both groups.
 
 **Hypothesis 3:**
 
-Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
-Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
+Null: Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
+
+Alternate: Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
 
 *Explanation*: The hypothesis serves to test the explanatory power of “Change in number of shares” Indicator, simultaneously assessing whether the Pecking Order Theory (refer to Literature Review) holds true.
 
 **Hypothesis 4:**
 
-If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
-Null:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
+Null: If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
+Alternate:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
 
 *Explanation*: The hypothesis serves to assess F-Score’s effectiveness and applicability for each specific sector.
 
 **Hypothesis 5:**
 
-If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
-Null: If Hypothesis 1 is null, not all 3 groups to tabulate F-Score are significant independent factors in assessing returns
+Null: If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
+Alternate: If Hypothesis 1 is null, not all 3 groups to tabulate F-Score are significant independent factors in assessing returns
 
 *Explanation*: The hypothesis serves to evaluate whether there are significant difference between the explanatory powers between the 3 groups of F-Score indicators.
 
