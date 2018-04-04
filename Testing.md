@@ -4,7 +4,7 @@ Introduction
 ------------
 This study seeks to examine the usefulness of Joseph D. Piotroski’s F-Score which uses historical financial statement information to identify companies with superior performance as well as deploy it as a foundational base where other inputs can be modified to further improve on the original’s effectiveness.
 
-Literature Review and Research's Motivation
+Literature Review
 -----------------
 
 **Introduction to F-Score**
@@ -62,6 +62,47 @@ The Pecking Order Theory states that for a company will raise its capital in the
 
 
 Thus, the increase in number of shares may also indeed serve as a negative indicator for all companies instead of specifically high book-to-market companies, albeit for differing reasons. Based on the assessment above, F-Score may serve as a valuable analysis tool for all companies.
+
+Research Motivation
+------------------
+The aim of this research is to reinforce the notion that F-Score is still relevant as an investment tool today ass noted under the literature review.  In addition, F-Score’s effectiveness will also be evaluated under different scenarios. This are being tested under the following hypothesis:- 
+
+**Hypothesis 1:**
+
+The difference between High F-Score and Low F-Score group’s market adjusted return = 0
+Null:  The difference between High F-Score and Low F-Score group’s market adjusted return is not 0
+
+*Explanation*: The hypothesis serves to evaluate F-Score general usefulness as an investment indicator by testing whether High F-Score companies have superior returns compared to Low F-Score companies.
+
+**Hypothesis 2:**
+
+The High/Low grouping based on F-Score is consistent with the original F-Score grouping
+Null: The High/Low grouping based on F-Score is not consistent with the original F-Score grouping
+
+*Explanation*: The hypothesis serves to check whether there can be any positive adjustments made to the grouping (High/Low) of the F-Score such as incorporating/excluding certain scores in both groups.
+
+**Hypothesis 3:**
+
+Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
+Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
+
+*Explanation*: The hypothesis serves to test the explanatory power of “Change in number of shares” Indicator, simultaneously assessing whether the Pecking Order Theory (refer to Literature Review) holds true.
+
+**Hypothesis 4:**
+
+If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
+Null:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
+
+*Explanation*: The hypothesis serves to assess F-Score’s effectiveness and applicability for each specific sector.
+
+**Hypothesis 5:**
+
+If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
+Null: If Hypothesis 1 is null, not all 3 groups to tabulate F-Score are significant independent factors in assessing returns
+
+*Explanation*: The hypothesis serves to evaluate whether there are significant difference between the explanatory powers between the 3 groups of F-Score indicators.
+
+
 
 Research Overview
 -----------------
@@ -185,31 +226,6 @@ Combining F-Score and Holding Returns is relatively straightforward with the R p
 
 Additional information is added such as industry/sector groupings for each company for more detailed testing. 
 
-Research Analysis
+Research Analysis/Findings
 -----------------
-As noted under the literature review, F-Score analysis will be performed on the selected sample population to reinforce the notion that F-Score is still relevant as an investment tool today. In addition, the original F-Score grouping will be reassessed to potentially expand or contract the High/Low F-Score groupings. The above hypothesis serves to incorporate another well-known financial concept (M&M
 
-**Hypothesis 1:**
-
-The difference between High F-Score and Low F-Score group’s market adjusted return = 0
-Null:  The difference between High F-Score and Low F-Score group’s market adjusted return is not 0
-
-**Hypothesis 2:**
-
-The High/Low grouping based on F-Score is consistent with the original F-Score grouping
-Null: The High/Low grouping based on F-Score is not consistent with the original F-Score grouping
-
-**Hypothesis 3:**
-
-Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
-Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
-
-**Hypothesis 4:**
-
-If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
-Null:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
-
-**Hypothesis 5:**
-
-If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
-Null: If Hypothesis 1 is null, not all 3 groups to tabulate F-Score are significant independent factors in assessing returns
