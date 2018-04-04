@@ -136,7 +136,7 @@ Due to the large number of companies’ information extracted, the function “t
 The R Package “Quantmod”, specifically its’ function “getSymbols” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. The matter is resolved by creating a new environment to store these newly created objects. Under the assumption that no objects will be created if no data are available from Yahoo Finance, the function “ls” is used to list out the objects created in the new environment, and subsequently compared against the original company list used to identify companies with missing data. 
 Instead of computing the returns from the share prices, the function “yearlyReturn” is used to extract the annual returns of each company. Furthermore, the function “adjustOHLC” is used in conjunction to readjust returns on share price based on stock-splits or reverse stock-splits during the period. 
 
-## Data Collection Limitation & Biases
+### Data Collection Limitation & Biases
 
 Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance. 
 
@@ -230,10 +230,12 @@ Combining F-Score and Holding Returns is relatively straightforward with the R p
 Additional information is added such as industry/sector groupings for each company for more detailed testing. 
 
 Research Analysis/Findings
------------------
-**Hypothesis 1**
+--------------------------
+### Hypothesis 1
 
 Empirical results show that F-Score still maintains its effectiveness in identifying companies with superior returns from companies with subpar returns. The results are as follows:-
+
+**Summary Data**
 
 | Grouping   |	Holding Return |	Standard Deviation |	Sample Size |	Min |	Max    |	Q25      |	Q50     |	Q75    |
 |:------------:|:----------------:|:--------------------:|:-------------:|:-----:|:--------:|:----------:|:---------:|:--------:|
@@ -241,6 +243,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 |Low_F.Score |	0.04902	      |0.5887982	|927|	-1	|1.961359|	-0.34964	|-0.00344	|0.324751|
 |Differences	|0.1423519	|-0.1484499|	1923|	0|	0.027379|	0.27462876|	0.14205453	|0.0839411|
 
+**Plots**
 
 |Violin Plot|Scatter Line Plot|
 |:-------------------------:|:-------------------------:|
