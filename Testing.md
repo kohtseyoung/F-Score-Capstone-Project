@@ -228,4 +228,19 @@ Additional information is added such as industry/sector groupings for each compa
 
 Research Analysis/Findings
 -----------------
+**Hypothesis 1**
+
+Empirical results show that F-Score still maintains its effectiveness in identifying companies with superior returns from companies with subpar returns. The results are as follows:-
+
+| Grouping   |	Holding Return |	Standard Deviation |	Sample Size |	Min |	Max    |	Q25      |	Q50     |	Q75    |
+|:------------:|:----------------:|:--------------------:|:-------------:|:-----:|:--------:|:----------:|:---------:|:--------:|
+|High_F.Score|	0.1913719      |	0.4403483          |	2850        |	-1	 |1.988738|	-0.07501	|0.138616	|0.408692|
+|Low_F.Score |	0.04902	      |0.5887982	|927|	-1	|1.961359|	-0.34964	|-0.00344	|0.324751|
+|Differences	|0.1423519	|-0.1484499|	1923|	0|	0.027379|	0.27462876|	0.14205453	|0.0839411|
+
+
+
+
+
+
 
