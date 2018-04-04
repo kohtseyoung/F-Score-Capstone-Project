@@ -242,8 +242,8 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 |Differences	|0.1423519	|-0.1484499|	1923|	0|	0.027379|	0.27462876|	0.14205453	|0.0839411|
 
 
-
-
-
+|Violin Plot|Scatter Line Plot|
+|:-------------------------:|:-------------------------:
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20Violin.png)  |  ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20GG_Line-1.jpg)|
 
 
