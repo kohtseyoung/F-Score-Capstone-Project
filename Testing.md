@@ -252,9 +252,9 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 					
 **Welch Two Sample t-test**		
  
-|T |Df|P-value|		
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|6.7708 |1279.8|1.946e-11|					
+|T |Df|P-value|Significant at 95%?		
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|6.7708 |1279.8|1.946e-11|Yes|					
 
 **Findings**
 
@@ -303,7 +303,7 @@ Empirical results show that changing F-Score indicator "Increase in number of sh
 
 **Summary Data**
 
-|F-Score	|High		|Std(High) 	|Low		| Std(Low)	|P-value	|Significant @95%|
+|F-Score	|High		|Std(High) 	|Low		| Std(Low)	|P-value	|Significant at 95%?|
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 |Original	|0.1913719	|0.4403483 	|0.04902	|0.5887982	|1.95E-11	|Yes		|
 |Modified	|0.17850536	|0.4658419 	|0.08374978	|0.5456782	|4.75E-05	|Yes		|		
