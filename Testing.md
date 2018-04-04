@@ -282,5 +282,17 @@ Empirical results show that the original F-Score grouping can optionally include
 |8	|0.224432484	|0.4442882	|952		|-0.04909918	|0.15356031	|0.4398432	|b			|
 |9	|0.247001731	|0.4737493	|246		|-0.01906319	|0.16189193	|0.4707094	|b			|
 
+**Scatter Line Plot**
 
+![Plot](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/GG%20Base%20Line.png)
+
+**Findings**
+
+As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant jump in returns between the following F-Scores: "2 -> 3", "5 -> 6", "7 -> 8". Focusing on these three significant increase, F-Score 3 higher returns is countered by its high return volality (2nd highest Standard Deviation). F-Score 6 shows to have both higher returns and lower return volatility compared to F-Score 5. F-Score 8 despite having higher returns, it also suffered from a slight increase in return volatity compared to F-Score 7. There is also a large decrease of return volality from F-Score 6 to F-Scocre 7 (0.487 to 0.431)
+
+From the results of TukeyHD test, the 9 F-Scores can be split into two groups with significant difference, the Low F-Score group containing score 1-5 and High F-Score group containing score 6-9. This is consistent from the basic analysis of mean and standard deviation as F-Score 6 shows a significant improvement in returns and volatility as noted above. 
+
+Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above. On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis as despite the slight increase in return from F-Score 6 -7, there is a big drop in volatility as noted above. 
+
+Therefore, the original F-Score grouping is effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 4-5 into Low F-Score and 6-7 into High F-Score in order to enchance returns, in spite of higher return volatilty. A suggestion to further perform analysis on the groupings is to use the financial tool, Sharpe Ratio to infer if the increase in volatility is a reasonbale trade of for higher returns. 
 
