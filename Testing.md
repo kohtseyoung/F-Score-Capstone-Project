@@ -294,5 +294,17 @@ From the results of TukeyHD test, the 9 F-Scores can be split into two groups wi
 
 Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above. On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis as despite the slight increase in return from F-Score 6 -7, there is a big drop in volatility as noted above. 
 
-Therefore, the original F-Score grouping is effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 4-5 into Low F-Score and 6-7 into High F-Score in order to enchance returns, in spite of higher return volatilty. A suggestion to further perform analysis on the groupings is to use the financial tool, Sharpe Ratio to infer if the increase in volatility is a reasonbale trade of for higher returns. 
+Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 4-5 into Low F-Score and 6-7 into High F-Score in order to enchance returns, in spite of higher return volatilty. A suggestion to further perform analysis on the groupings is to use the financial tool, Sharpe Ratio to infer if the increase in volatility is a reasonbale trade of for higher returns. 
 
+
+### Hypothesis 3
+
+Empirical results show that changing F-Score indicator "Increase in number of shares" from a negative indicator to a positive indicator do not yield higher returns.
+
+**Summary Data**
+
+|F-Score	|High		|Std(High) 	|Low		| Std(Low)	|P-value	|Significant @95%|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|Original	|0.1913719	|0.4403483 	|0.04902	|0.5887982	|1.95E-11	|Yes		|
+|Modified	|0.17850536	|0.4658419 	|0.08374978	|0.5456782	|4.75E-05	|Yes		|		
+|Difference	|0.01286654	|		|-0.03472978	|		|		|		|	
