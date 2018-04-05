@@ -334,9 +334,11 @@ Empirical results show that the effective of F-Score varies across different sec
 |Technology		|0.207			|0.080			|0.128		|0.0058		|Yes		|
 |Transportation		|0.132			|-0.485			|0.617		|0.0007		|Yes		|
 
+**Scatter Line Plot**
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20Industry-1.jpg)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Scatter%20Plot%20Group%20Sector%20Part%201.png)
 
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Scatter%20Plot%20Group%20Sector%20Part%202.png)
 
 
 
