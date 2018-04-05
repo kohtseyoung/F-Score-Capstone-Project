@@ -320,7 +320,7 @@ Empirical results show that the effectiveness of F-Score varies across different
 **Summary Data**
 
 
-|Sectors		|No. Samples 	|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value|Significant @95%|
+|Sectors		|No. Samples 	|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value|Significant at 95?|
 |:---------------------:|:-----------	|:---------------------:|:---------------------:|:-------------:|:-----:|:-------------:|
 |Basic Industries	|167		|0.118			|-0.075			|0.192		|0.0210		|Yes	|	
 |Capital Goods		|372		|0.245			|0.091			|0.154		|0.0680		|**No**	|
