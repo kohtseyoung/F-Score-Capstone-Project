@@ -315,7 +315,7 @@ Based on the findings, we cannot reject the null hypothesis. It is consistent wi
 
 ### Hypothesis 4
 
-Empirical results show that the effective of F-Score varies across different sectors.
+Empirical results show that the effectiveness of F-Score varies across different sectors.
 
 **Summary Data**
 
