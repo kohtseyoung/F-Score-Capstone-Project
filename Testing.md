@@ -93,15 +93,17 @@ Alternate: Changing increase in number of shares as a positive indicator yields 
 
 **Hypothesis 4:**
 
-Null: If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries = 0
-Alternate:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is not 0
+Null: If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries < 0
+
+Alternate:  If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different industries  is  >= 0
 
 *Explanation*: The hypothesis serves to assess F-Score’s effectiveness and applicability for each specific sector.
 
 **Hypothesis 5:**
 
-Null: If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
-Alternate: If Hypothesis 1 is null, not all 3 groups to tabulate F-Score are significant independent factors in assessing returns
+Null: If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group’s market adjusted return across different years is  < 0
+
+Alternate: If Hypothesis 1 is null,  the difference between High F-Score and Low F-Score group’s market adjusted return across different years >= 0
 
 *Explanation*: The hypothesis serves to evaluate whether there are significant difference between the explanatory powers between the 3 groups of F-Score indicators.
 
@@ -111,7 +113,7 @@ Research Overview
 -----------------
 The overall research process is summarized in the flowchart as follows:
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Research%20Layout.png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Research%20Layout%20(Modified).png)
 
 As seen from the table above, the main three data sources are from NASDAQ, Morning Star and Yahoo Finance. From these three data sources, the raw data files are company list, income statement, balance sheet, cash flow statement, key ratio share price and industry.  The raw data after processed by R are grouped into the following: F-Score Indicators, Grouping (High/Low) and Holding Return. Lastly, based on the results from the analysis of the processed data, it will provide evidence on whether following the hypotheses raised (Please refer to *Research Analysis* Section) can be confirm or falsify.
 
