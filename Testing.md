@@ -344,7 +344,7 @@ Empirical results show that F-Score does not serve as an effective investment to
 
 As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. It is expected for companies under the Energy and Public Utilities, as similar to companies under the Finance Sector which was initially filtered out, these companies adhere to financial reporting standards unique to their sectors. 
 
-For Capital Goods, it P-Value of 6% is only slightly above the significance value of 95%.  Thus, an investigation was prompt to determine companies that negatively affect the P-Value. Our findings shows that that by removing companies from the industry “Pollution Control Equipment”, the P-Value will fall within 5%.
+For Capital Goods, its P-Value of 6% is only slightly above the significance value of 95%.  Thus, an investigation was prompt to determine companies that negatively affect the P-Value. Our findings shows that that by removing companies from the industry “Pollution Control Equipment”, the P-Value will fall within 5%.
 
 Lastly for Consumer Services, despite having a high P-value, the High F-Score mean returns are higher (approx. 41%) than the Low F-Score group, reflecting some degree of effectiveness. A probable reason for the high P-value is due to the difference in business model for such companies, albeit not as unique of those from the Energy, Public Utilities and Finance Sectors. Service companies’ businesses are usually contractual in nature, their service pricing are consistently based on a flat percentage margin above its expenses. The stability of its margin and sales will render indicators under “Profitability” group ineffective as these indicators monitors the changes of such values.
 
