@@ -311,5 +311,32 @@ Empirical results show that changing F-Score indicator "Increase in number of sh
 
 Empirical results show that the original F-Score performs better than the modified F-Score in identifying both superior and subpar companies. From the table above, the original High F-Score grouping have both higher mean returns and lower return volatility rate, while the original Low F-Score grouping have both lower mean returns and high return volatility compared to modified F-Score.
 
-Based on the findings, we cannot reject the null hypothesis. It is consistent with the Pecking Order Theory as elaborated under the Literature Review Section that issuing of shares sends a negative signal to investors that the company's is overvalued. Therefore, rather than reflecting the health of a company’s capital structure as originally intended, the "increase in number of shares" still serves as a valuable signalling tool for bridging asymmetrical information about the company’s valuation between managers and investors. 
+Based on the findings, we cannot reject the null hypothesis. It is consistent with the Pecking Order Theory as elaborated under the Literature Review Section that issuing of shares sends a negative signal to investors that the company's is overvalued. Therefore, rather than reflecting the health of a company’s capital structure as originally intended, the "increase in number of shares" still serves as a valuable signalling tool for bridging asymmetrical information about the company’s valuation between managers and investors.
+
+### Hypothesis 4
+
+Empirical results show that the effective of F-Score varies across different sectors.
+
+**Summary Data**
+
+
+|Sectors		|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value	|Significant @95%|
+|:---------------------:|:---------------------:|:---------------------:|:-------------:|:-------------:|:-------------:|
+|Basic Industries	|0.118			|-0.075			|0.192		|0.0210		|Yes		|		
+|Capital Goods		|0.245			|0.091			|0.154		|0.0680		|**No**		|
+|Consumer Durables	|0.232			|-0.065			|0.297		|0.0003		|Yes		|
+|Consumer Non-Durables	|0.206			|-0.055			|0.261		|0.0137		|Yes		|
+|Consumer Services	|0.188			|0.133			|0.056		|0.3302		|**No**		|
+|Energy			|0.074			|0.255			|-0.182		|0.1287		|**No**		|
+|Health Care		|0.158			|0.040			|0.117		|0.0064		|Yes		|
+|Miscellaneous		|0.210			|-0.106			|0.316		|0.0054		|Yes		|
+|Public Utilities	|0.137			|0.163			|-0.025		|0.8357		|**No**		|
+|Technology		|0.207			|0.080			|0.128		|0.0058		|Yes		|
+|Transportation		|0.132			|-0.485			|0.617		|0.0007		|Yes		|
+
+
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Group%20Industry-1.jpg)
+
+
+
 
