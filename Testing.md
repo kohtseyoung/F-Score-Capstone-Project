@@ -320,19 +320,19 @@ Empirical results show that the effective of F-Score varies across different sec
 **Summary Data**
 
 
-|Sectors		|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value	|Significant @95%|
-|:---------------------:|:---------------------:|:---------------------:|:-------------:|:-------------:|:-------------:|
-|Basic Industries	|0.118			|-0.075			|0.192		|0.0210		|Yes		|		
-|Capital Goods		|0.245			|0.091			|0.154		|0.0680		|**No**		|
-|Consumer Durables	|0.232			|-0.065			|0.297		|0.0003		|Yes		|
-|Consumer Non-Durables	|0.206			|-0.055			|0.261		|0.0137		|Yes		|
-|Consumer Services	|0.188			|0.133			|0.056		|0.3302		|**No**		|
-|Energy			|0.074			|0.255			|-0.182		|0.1287		|**No**		|
-|Health Care		|0.158			|0.040			|0.117		|0.0064		|Yes		|
-|Miscellaneous		|0.210			|-0.106			|0.316		|0.0054		|Yes		|
-|Public Utilities	|0.137			|0.163			|-0.025		|0.8357		|**No**		|
-|Technology		|0.207			|0.080			|0.128		|0.0058		|Yes		|
-|Transportation		|0.132			|-0.485			|0.617		|0.0007		|Yes		|
+|Sectors		|No. Samples 	|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value|Significant @95%|
+|:---------------------:|:-----------	|:---------------------:|:---------------------:|:-------------:|:-----:|:-------------:|
+|Basic Industries	|167		|0.118			|-0.075			|0.192		|0.0210		|Yes	|	
+|Capital Goods		|372		|0.245			|0.091			|0.154		|0.0680		|**No**	|
+|Consumer Durables	|199		|0.232			|-0.065			|0.297		|0.0003		|Yes	|
+|Consumer Non-Durables	|232		|0.206			|-0.055			|0.261		|0.0137		|Yes	|
+|Consumer Services	|696		|0.188			|0.133			|0.056		|0.3302		|**No**	|
+|Energy			|108		|0.074			|0.255			|-0.182		|0.1287		|**No**	|
+|Health Care		|669		|0.158			|0.040			|0.117		|0.0064		|Yes	|
+|Miscellaneous		|166		|0.210			|-0.106			|0.316		|0.0054		|Yes	|
+|Public Utilities	|125		|0.137			|0.163			|-0.025		|0.8357		|**No**	|
+|Technology		|928		|0.207			|0.080			|0.128		|0.0058		|Yes	|
+|Transportation		|115		|0.132			|-0.485			|0.617		|0.0007		|Yes	|
 
 **Scatter Line Plot**
 
