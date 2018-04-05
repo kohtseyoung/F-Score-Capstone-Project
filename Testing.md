@@ -370,6 +370,10 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 |Y2016	|0.165	|-0.132	|0.297		|0.000		|Yes
 |Y2017	|0.229	|-0.010	|0.239		|0.000		|Yes
 
+**Scatter Line Plot**
+
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/GG%20Group%20Year.png)
+
 As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in the 1st half of the dataset (from Y2009 to Y2013).  F-Score remains effective from Y2014 to Y2017.  
 
 A possible explanation would be due to the 2008 – 2009 World Financial Crisis and the 2010 – 2013 European Sovereign Debt Crisis, dampening the effectiveness of the F-Score indicator. As previously noted, F-Score is use to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
