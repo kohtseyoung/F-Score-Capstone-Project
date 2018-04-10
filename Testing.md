@@ -7,7 +7,7 @@ This study seeks to examine the usefulness of Joseph D. Piotroski’s F-Score wh
 Literature Review
 -----------------
 
-**Introduction to F-Score**
+##Introduction to F-Score
 
 The F-score is a widely known performance/investment strategy due to its simplicity and accessibility. It uses public published information readily available for investor to separate strong performers from weak performers among high book-to-market firms. A score is computed based on 9 criteria categorized into 3 different groups and are summarized as follows:
 
@@ -34,7 +34,7 @@ The F-score is a widely known performance/investment strategy due to its simplic
 
 The total score is tabulated and companies are split into two main groups, High F-Score and Low F-Score. High F-Score consists of companies with score between 8-9, while low F-Score consists of companies with score between 0-1. Based on the grouping, an investor can make informed investment decisions (etc. holding companies' shares with high F-Score and short companies's shares with low F-Score).
 
-**Relevancy of F-Score in Today’s Economy**
+##Relevancy of F-Score in Today’s Economy
 
 The empirical study of the F-Score is based on companies selected from 1976 and 1996. Since then, in the past 20 years, the overall economy landscape has experience massive seismic shifts; from multiple recessions (Dot.com bubble burst from 1997-2001, The Great Recession from 2007-2012) to the explosive growth of tech-based companies and slow-decline of manufacturing firms. Besides, there have been monumental changes to organization structure of companies, many opting for a more flat-based structure rather than a hierarchical one to cope with the ever-changing economy. This has in-turn impact on how companies’ resources and finances are managed. 
 
@@ -42,9 +42,9 @@ While the aforementioned events may undermine the credibility of the F-Score, am
 
 In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances give rise to strong motivation and purpose to reassess the credibility of the F-Score and modify the indicators accordingly if needed to suit the different stance of today’s economy. 
 
-**F-Score and the Extending its Applicability**  
+##F-Score and the Extending its Applicability  
 
-**_F-Score Indicators_**
+**F-Score Indicators**
 
 F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. Therefore, the rationale behind each F-Score’s indicators reflects the performance of such firms while taking their financial characteristics into account.
 
@@ -66,7 +66,7 @@ The Pecking Order Theory states that a company will raise its capital in the fol
 
 Thus, the increase in number of shares may also indeed serve as a negative indicator for all companies instead of specifically high book-to-market companies, albeit for differing reasons. Based on the assessment above, F-Score may serve as a valuable analysis tool for all companies.
 
-**_F-Score Grouping_**
+**F-Score Grouping**
 
 Besides assessing F-Score's indicators, some degree of modification to F-Score's original grouping: Low (0-1) and High (8-9) can be considered to assist its applicability on all companies. Although a narrower score proves as a strict criteria in selecting companies, its downside includes a lesser diversification of risk and lower investment opportunites stemming from a smaller invesment pool of companies. The selection of a narrower F-Score in Joseph D. Piotroski's test is mainly to minimize the high risk of investing on financial distressed company, to ensure the companies selected are truly from both ends of the performance spectrum. 
 
