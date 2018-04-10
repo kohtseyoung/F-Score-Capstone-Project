@@ -361,11 +361,11 @@ Empirical results show that the effectiveness of F-Score varies across different
 |Capital Goods		|185		|0.202			|0.076			|0.126		|0.0481		|Yes	|
 |Consumer Services	|223		|0.168			|-0.018			|0.186		|0.0002		|Yes	|
 |Health Care		|647		|0.194			|-0.005			|0.199		|0.0000		|Yes	|
-|Miscellaneous		|109		|0.148			|-0.071			|0.219		|0.0174		|**No**	|
+|Miscellaneous		|109		|0.148			|-0.071			|0.219		|0.0174		|Yes	|
 |Public Utilities	|1060		|0.141			|0.031			|0.110		|0.3382		|**No**	|
 |Basic Industry		|160		|0.005			|-0.034			|0.039		|0.6309		|**No**	|
 |Energy 		|107		|0.028			|0.123			|-0.095		|0.3335		|**No**	|
-|Consumer Non-Durables	|896		|0.182			|0.0055			|0.128		|0.1177		|Yes	|
+|Consumer Non-Durables	|896		|0.182			|0.0055			|0.128		|0.1177		|**No**	|
 |Consumer Durables	|102		|0.202			|-0.058			|0.260		|0.0005		|Yes	|
 
 **Scatter Line Plot**
@@ -374,9 +374,9 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_1(resize).png)
 
-As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Capital Goods, Consumer Services, Energy and Public Utilities. This is especially true for companies in the Energy and Public Utilities as it is noted that the mean returns for the Low F-Score group is higher than the High F-Score group.
+As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Basic Industry, Energy and Consumer Non-Durables. This is especially true for companies in the Energy as the mean returns for its Low F-Score group is higher than the High F-Score group.
 
-As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. It is expected for companies under the Energy and Public Utilities, as similar to companies under the Finance Sector which was initially filtered out, these companies adhere to financial reporting standards unique to their sectors. 
+As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. It is expected for companies under the Energy, Public Utilities and Basic Industry, as similar to companies under the Finance Sector which was initially filtered out, these companies adhere to financial reporting standards unique to their sectors. 
 
 For Capital Goods, its P-Value of 6% is only slightly above the significance value of 95%.  Thus, an investigation was prompt to determine companies that negatively affect the P-Value. Our findings shows that that by removing companies from the industry “Pollution Control Equipment”, the P-Value will fall within 5%.
 
