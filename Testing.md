@@ -239,11 +239,11 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 **Summary Data**
 
-| Grouping   |	Holding Return 	|Standard Deviation |	Sample Size |	Min |	Max    |Q25      |Q50     |Q75    |
-|:----------:|:----------------:|:--------------------:|:-------------:|:-----:|:--------:|:----------:|:---------:|:--------:|
-|High_F.Score|0.191      	|0.440         	|2850	|	-1	|1.989|	-0.0750	|0.139	|0.409|
-|Low_F.Score |0.0490	     	|0.589		|927	|	-1	|1.961|	-0.350|-0.00344|0.325|
-|Difference  |0.142		|-0.148		|1923	|	0	|0.0274|0.275|	0.142	|0.0839|
+| Grouping   |	Holding Return 	|Standard Deviation	|Sample Size 	|Q25	|Q50	|Q75  |  |
+|:----------:|:----------------:|:---------------------:|:-------------:|:-----:|:-----:|:---:|
+|High_F.Score|0.160      	|0.430         		|2395		|-0.108	|0.139	|0.349|
+|Low_F.Score |0.008	     	|0.589			|1615		|-0.407	|-0.065	|0.287|
+|Difference  |0.153		|-0.160			|780		|0.299	|0.173	|0.062|
 
 **Plots**
 
@@ -256,7 +256,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
  
 |T |Df|P-value|Significant at 95%?		
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|6.7708 |1279.8|1.946e-11|Yes|					
+|8.9307 |2741.2|2.2e-16|Yes|					
 
 **Findings**
 
@@ -274,15 +274,15 @@ Empirical results show that the original F-Score grouping can optionally include
 
 |F Score	|Holding_Return	|Std	|No. Samples	|Q25		|Q50		|Q75		|TukeyHD Test Grouping	|
 |:-------------:|:-------------:|:-----:|:-------------:|:-------------:|:-------------:|:-------------:|:---------------------:|
-|1	|-0.00665	|0.617		|41		|-0.413		|-0.0294	|0.395		|a			|
-|2	|0.0226		|0.546		|215		|-0.349		|-0.00515	|0.332		|a			|
-|3	|0.0609		|0.601		|671		|-0.344		|-0.00237	|0.317		|a			|	
-|4	|0.0757		|0.579		|1402		|-0.306		|0.0134		|0.379		|a			|
-|5	|0.0900		|0.522		|2094		|-0.233		|0.0423		|0.340		|a			|
-|6	|0.151		|0.488		|2133		|-0.134		|0.0988		|0.366		|b			|
-|7	|0.164		|0.431		|1652		|-0.101		|0.126		|0.381		|b			|
-|8	|0.224		|0.444		|952		|-0.0491	|0.154		|0.440		|b			|
-|9	|0.247		|0.4734		|246		|-0.0191	|0.1612		|0.471		|b			|
+|1		|0.033		|0.637	|118		|-0.410		|-0.029		|0.377		|a			
+|2		|-0.032		|0.567	|480		|-0.422		|-0.084		|0.250		|ab			
+|3		|0.023		|0.594	|1017		|-0.396		|-0.059		|0.303		|abc			
+|4		|0.067		|0.563	|1448		|-0.295		|0.006		|0.350		|abc			
+|5		|0.104		|0.473	|1804		|-0.184		|0.060		|0.324		|bc			
+|6		|0.142		|0.436	|1805		|-0.116		|0.101		|0.359		|cd			
+|7		|0.155		|0.436	|1445		|-0.123		|0.104		|0.349		|cde			
+|8		|0.173		|0.422	|765		|-0.084		|0.118		|0.458		|de			
+|9		|0.147		|0.409	|185		|-0.077		|0.103		|0.311		|e			
 
 **Scatter Line Plot**
 
@@ -293,6 +293,22 @@ Empirical results show that the original F-Score grouping can optionally include
 As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant jump in returns between the following F-Scores: "2 -> 3", "5 -> 6", "7 -> 8". Focusing on these three significant increase, F-Score 3 higher returns is countered by its high return volality (2nd highest Standard Deviation). F-Score 6 shows to have both higher returns and lower return volatility compared to F-Score 5. F-Score 8 despite having higher returns, it also suffered from a slight increase in return volatity compared to F-Score 7. There is also a large decrease of return volality from F-Score 6 to F-Scocre 7 (0.487 to 0.431)
 
 From the results of TukeyHD test, the 9 F-Scores can be split into two groups with significant difference, the Low F-Score group containing score 1-5 and High F-Score group containing score 6-9. This is consistent from the basic analysis of mean and standard deviation as F-Score 6 shows a significant improvement in returns and volatility as noted above. 
+
+
+**Sharpe Ratio Analysis**
+
+|F Score	|Holding_Return	|Risk-Free Rate	|No. Samples	|Sharpe Ratio	|	
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|1		|0.033		|0.0283		|0.004		|0.007		|		
+|2		|-0.032		|0.0283		|-0.060		|-0.106		|			
+|3		|0.023		|0.0283		|-0.005		|-0.008		|			
+|4		|0.067		|0.0283		|0.039		|0.069		|			
+|5		|0.104		|0.0283		|0.075		|0.159		|			
+|6		|0.142		|0.0283		|0.114		|0.261		|			
+|7		|0.155		|0.0283		|0.127		|0.291		|			
+|8		|0.173		|0.0283		|0.144		|0.342		|			
+|9		|0.147		|0.0283		|0.119		|0.290		|			
+* *Risk-Free Rate is based on 10-year US Treasury Bond*
 
 Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above. On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis as despite the slight increase in return from F-Score 6 -7, there is a big drop in volatility as noted above. 
 
@@ -324,17 +340,17 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 |Sectors		|No. Samples 	|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value|Significant at 95?|
 |:---------------------:|:-----------:	|:---------------------:|:---------------------:|:-------------:|:-----:|:-------------:|
-|Basic Industries	|167		|0.118			|-0.075			|0.192		|0.0210		|Yes	|	
-|Capital Goods		|372		|0.245			|0.091			|0.154		|0.0680		|**No**	|
-|Consumer Durables	|199		|0.232			|-0.065			|0.297		|0.0003		|Yes	|
-|Consumer Non-Durables	|232		|0.206			|-0.055			|0.261		|0.0137		|Yes	|
-|Consumer Services	|696		|0.188			|0.133			|0.056		|0.3302		|**No**	|
-|Energy			|108		|0.074			|0.255			|-0.182		|0.1287		|**No**	|
-|Health Care		|669		|0.158			|0.040			|0.117		|0.0064		|Yes	|
-|Miscellaneous		|166		|0.210			|-0.106			|0.316		|0.0054		|Yes	|
-|Public Utilities	|125		|0.137			|0.163			|-0.025		|0.8357		|**No**	|
-|Technology		|928		|0.207			|0.080			|0.128		|0.0058		|Yes	|
-|Transportation		|115		|0.132			|-0.485			|0.617		|0.0007		|Yes	|
+|Technology		|160		|0.147			|0.054			|0.092		|0.0141		|Yes	|	
+|Transportation		|361		|0.164			|-0.301			|0.465		|0.0003		|Yes	|
+|Capital Goods		|185		|0.202			|0.076			|0.126		|0.0481		|Yes	|
+|Consumer Services	|223		|0.168			|-0.018			|0.186		|0.0002		|Yes	|
+|Health Cre		|647		|0.194			|-0.005			|0.199		|0.0000		|Yes	|
+|Miscellaneous		|109		|0.148			|-0.071			|0.219		|0.0174		|**No**	|
+|Public Utilities	|1060		|0.141			|0.031			|0.110		|0.3382		|**No**	|
+|Basic Industry		|160		|0.005			|-0.034			|0.039		|0.6309		|**No**	|
+|Energy 		|107		|0.028			|0.123			|-0.095		|0.3335		|**No**	|
+|Consumer Non-Durables	|896		|0.182			|0.0055			|0.128		|0.1177		|Yes	|
+|Consumer Durables	|102		|0.202			|-0.058			|0.260		|0.0005		|Yes	|
 
 **Scatter Line Plot**
 
@@ -359,16 +375,16 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 **Data Summary**
 
 |Year	|High	|Low	|Differences	|P-value	|Significant @95%
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|Y2009	|0.423	|0.537	|-0.114		|0.126		|**No**
-|Y2010	|0.344	|0.172	|0.172		|0.006		|Yes
-|Y2011	|-0.017	|-0.109	|0.091		|0.170		|**No**
-|Y2012	|0.172	|0.052	|0.119		|0.032		|Yes
-|Y2013	|0.417	|0.435	|-0.017		|0.818		|**No**
-|Y2014	|0.101	|-0.026	|0.127		|0.031		|Yes
-|Y2015	|-0.019	|-0.172	|0.153		|0.001		|Yes
-|Y2016	|0.165	|-0.132	|0.297		|0.000		|Yes
-|Y2017	|0.229	|-0.010	|0.239		|0.000		|Yes
+|:-----:|:-----:|:-----:|:-------------:|:-------------:|:-----:|
+|Y2009	|0.331	|0.132	|0.198		|0.00		|Yes
+|Y2010	|0.030	|-0.038	|0.068		|0.22		|**No**
+|Y2011	|0.129	|-0.018	|0.147		|0.00		|Yes
+|Y2012	|0.376	|0.381	|-0.004		|0.95		|**No**
+|Y2013	|0.122	|0.030	|0.092		|0.05		|Yes
+|Y2014	|-0.001	|-0.102	|0.102		|0.01		|Yes
+|Y2015	|0.122	|-0.197	|0.319		|0.00		|Yes
+|Y2016	|0.224	|-0.061	|0.164		|0.00		|Yes
+|Y2017	|0.212	|-0.155	|0.368		|0.05		|Yes
 
 **Scatter Line Plot**
 
