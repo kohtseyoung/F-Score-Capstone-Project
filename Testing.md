@@ -354,9 +354,9 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 **Scatter Line Plot**
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_2.png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_2(resize).png)
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_1.png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_1(resize).png)
 
 As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Capital Goods, Consumer Services, Energy and Public Utilities. This is especially true for companies in the Energy and Public Utilities as it is noted that the mean returns for the Low F-Score group is higher than the High F-Score group.
 
