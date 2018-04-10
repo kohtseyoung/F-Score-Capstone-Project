@@ -7,7 +7,7 @@ This study seeks to examine the usefulness of Joseph D. Piotroski’s F-Score wh
 Literature Review
 -----------------
 
-##Introduction to F-Score
+### Introduction to F-Score
 
 The F-score is a widely known performance/investment strategy due to its simplicity and accessibility. It uses public published information readily available for investor to separate strong performers from weak performers among high book-to-market firms. A score is computed based on 9 criteria categorized into 3 different groups and are summarized as follows:
 
@@ -34,7 +34,7 @@ The F-score is a widely known performance/investment strategy due to its simplic
 
 The total score is tabulated and companies are split into two main groups, High F-Score and Low F-Score. High F-Score consists of companies with score between 8-9, while low F-Score consists of companies with score between 0-1. Based on the grouping, an investor can make informed investment decisions (etc. holding companies' shares with high F-Score and short companies's shares with low F-Score).
 
-##Relevancy of F-Score in Today’s Economy
+### Relevancy of F-Score in Today’s Economy
 
 The empirical study of the F-Score is based on companies selected from 1976 and 1996. Since then, in the past 20 years, the overall economy landscape has experience massive seismic shifts; from multiple recessions (Dot.com bubble burst from 1997-2001, The Great Recession from 2007-2012) to the explosive growth of tech-based companies and slow-decline of manufacturing firms. Besides, there have been monumental changes to organization structure of companies, many opting for a more flat-based structure rather than a hierarchical one to cope with the ever-changing economy. This has in-turn impact on how companies’ resources and finances are managed. 
 
@@ -42,7 +42,7 @@ While the aforementioned events may undermine the credibility of the F-Score, am
 
 In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances give rise to strong motivation and purpose to reassess the credibility of the F-Score and modify the indicators accordingly if needed to suit the different stance of today’s economy. 
 
-##F-Score and the Extending its Applicability  
+### Extension of F-Score's Applicability  
 
 **F-Score Indicators**
 
@@ -140,16 +140,17 @@ The sample population of companies used is based from NASDAQ. There is a list of
 
 For financial information that is required for F-Score testing, MorningStar is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
-Due to the large number of companies’ information extracted, the function “try” and “sys.sleep” is used to ensure that all information is captured. Besides, a second run of extraction is performed if there are unusually large amount of missing values noted.
-
 ### Share Prices and Holding Returns
 
-The R Package “Quantmod”, specifically its’ function “getSymbols” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. The matter is resolved by creating a new environment to store these newly created objects. Under the assumption that no objects will be created if no data are available from Yahoo Finance, the function “ls” is used to list out the objects created in the new environment, and subsequently compared against the original company list used to identify companies with missing data. 
-Instead of computing the returns from the share prices, the function “yearlyReturn” is used to extract the annual returns of each company. Furthermore, the function “adjustOHLC” is used in conjunction to readjust returns on share price based on stock-splits or reverse stock-splits during the period. 
+The R Package “Quantmod” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. These companies are removed from the testing population.
+
+For the computation of share price resturns, quarterly returns are computed initially as stand alone variables, and subsequently combined as yearly returns, take into account companies' different fiscal year-end period. Furthermore, the returns on share price based on stock-splits or reverse stock-splits are readjust to ensure that returns are not inflated/deflated during the relevant testing period. 
 
 ### Data Collection Limitation & Biases
 
-Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance. 
+Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance.
+
+As the companies tested are those listed on NASDAQ in 2017 for the period 2008-2017, there will be a significant survivorship bias as companies with low performance that are subsequently delisted from the period 2008-2017 would not be part of the testing population. This would inevitably overstate the returns of low F-Score companies.
 
 Data Wrangling
 --------------
@@ -206,6 +207,11 @@ Gross profit margin data is extracted from key ratio statement.  Change in gross
 **_Indicator 9 – Change in Asset Turnover_**
 
 Asset turnover is defined as total sales scaled by Beginning Year Assets. Sales are extracted from key ratio statement while Beginning Year Assets as computed as per above.  Change in asset turnover is the difference between current year and past year asset turnover.
+
+**Tabulating F-Scores**
+
+As noted under the literature review, instead of following the original groupings, High F-Score group consists of scores from 7-9 while Low F-Score group consists of score from 1-3.
+
 
 ### 2. Financial Fiscal Date Period
 
@@ -269,11 +275,11 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 **Findings**
 
-From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 14% compared to Low F-Score companies. Besides, High F-Score companies also have lower returns volatilty compared to Low F-Score companies as inferred from the summary data and plots. 
+From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 15% compared to Low F-Score companies. Besides, High F-Score companies also have lower returns volatilty compared to Low F-Score companies as inferred from the summary data and plots. 
 
-There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positive skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present (approx. 450%) between High and Low F-Score companies.
+There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positively skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present between High and Low F-Score companies.
 
-Therefore, companies with High F-Score possess higher returns and lower return volailty, transalting to lower investment risk as compared to companies with Low F-Score. 
+Therefore, companies with High F-Score possess higher returns and lower return volailty, translating to lower investment risk compared to companies with Low F-Score. 
 
 ### Hypothesis 2
 
@@ -299,9 +305,9 @@ Empirical results show that the original F-Score grouping can optionally include
 
 **Findings**
 
-As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant jump in returns between the following F-Scores: "2 -> 3", "5 -> 6", "7 -> 8". Focusing on these three significant increase, F-Score 3 higher returns is countered by its high return volality (2nd highest Standard Deviation). F-Score 6 shows to have both higher returns and lower return volatility compared to F-Score 5. F-Score 8 despite having higher returns, it also suffered from a slight increase in return volatity compared to F-Score 7. There is also a large decrease of return volality from F-Score 6 to F-Scocre 7 (0.487 to 0.431)
+As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant changes in returns between the following F-Scores: "1 -> 2", "3 -> 8", "8-9". Focusing on these three significant increase, F-Score 1 higher returns is countered by its high return volality (the highest Standard Deviation). F-Scores from 3 to 8 shows to have both higher returns and lower return volatility than its previous scores. For "8-9", F-Score 8 despite having higher returns, it also suffered from a slightly higher return volatity compared to F-Score 9. 
 
-From the results of TukeyHD test, the 9 F-Scores can be split into two groups with significant difference, the Low F-Score group containing score 1-5 and High F-Score group containing score 6-9. This is consistent from the basic analysis of mean and standard deviation as F-Score 6 shows a significant improvement in returns and volatility as noted above. 
+From the results of TukeyHD test, the 9 F-Scores returns have significant difference between all scores. This finding enables a high flexiblity and autonomy for the assignment of F-Score into the Low and High groups. 
 
 
 **Sharpe Ratio Analysis**
@@ -319,10 +325,11 @@ From the results of TukeyHD test, the 9 F-Scores can be split into two groups wi
 |9		|0.147		|0.0283		|0.119		|0.290		|			
 * *Risk-Free Rate is based on 10-year US Treasury Bond*
 
-Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above. On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis as despite the slight increase in return from F-Score 6 -7, there is a big drop in volatility as noted above. 
+Sharpe Ratio analysis is further performed to determine the trade-off of excess returns per risk (Standard Deviation) for each F-Scores, enabling more informed judgment for the most suitable groupings for both High and Low groups.
 
-Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 4-5 into Low F-Score and 6-7 into High F-Score in order to enchance returns, in spite of higher return volatilty. A suggestion to further perform analysis on the groupings is to use the financial tool, Sharpe Ratio to infer if the increase in volatility is a reasonbale trade off for higher returns. 
+Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above (the lowest 3 Sharpe Ratio). On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis due to having the top 3 Sharpe Ratio.
 
+Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 2-3 into Low F-Score and 7 into High F-Score in order to enchance returns, based on their risk and return trade-off.
 
 ### Hypothesis 3
 
