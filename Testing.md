@@ -344,7 +344,7 @@ Empirical results show that the effectiveness of F-Score varies across different
 |Transportation		|361		|0.164			|-0.301			|0.465		|0.0003		|Yes	|
 |Capital Goods		|185		|0.202			|0.076			|0.126		|0.0481		|Yes	|
 |Consumer Services	|223		|0.168			|-0.018			|0.186		|0.0002		|Yes	|
-|Health Cre		|647		|0.194			|-0.005			|0.199		|0.0000		|Yes	|
+|Health Care		|647		|0.194			|-0.005			|0.199		|0.0000		|Yes	|
 |Miscellaneous		|109		|0.148			|-0.071			|0.219		|0.0174		|**No**	|
 |Public Utilities	|1060		|0.141			|0.031			|0.110		|0.3382		|**No**	|
 |Basic Industry		|160		|0.005			|-0.034			|0.039		|0.6309		|**No**	|
@@ -374,7 +374,7 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 
 **Data Summary**
 
-|Year	|High	|Low	|Differences	|P-value	|Significant @95%
+|Year	|High	|Low	|Differences	|P-value	|Significant at 95%?
 |:-----:|:-----:|:-----:|:-------------:|:-------------:|:-----:|
 |Y2009	|0.331	|0.132	|0.198		|0.00		|Yes
 |Y2010	|0.030	|-0.038	|0.068		|0.22		|**No**
