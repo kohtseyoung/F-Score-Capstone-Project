@@ -239,7 +239,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 **Summary Data**
 
-| Grouping   |	Holding Return 	|Standard Deviation	|Sample Size 	|Q25	|Q50	|Q75  |  |
+| Grouping   |	Holding Return 	|Standard Deviation	|Sample Size 	|Q25	|Q50	|Q75  |  
 |:----------:|:----------------:|:---------------------:|:-------------:|:-----:|:-----:|:---:|
 |High_F.Score|0.160      	|0.430         		|2395		|-0.108	|0.139	|0.349|
 |Low_F.Score |0.008	     	|0.589			|1615		|-0.407	|-0.065	|0.287|
