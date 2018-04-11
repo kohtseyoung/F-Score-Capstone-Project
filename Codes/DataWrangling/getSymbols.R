@@ -11,13 +11,10 @@ WoW <- new.env()
 #load NASDAQ company list
 companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
 
-
-
 #-------- Creating Full Key Ratio Data Set--------
 
 Company_KeyRatio <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Key Ratios\\companylist(KR Final).csv")
 Company_KeyRatio <-Company_KeyRatio[,c(2:18)]
-
 head(Company_KeyRatio)
 
 #-------- Checking Company's Fiscal Month based on Margins % Sales under Key Ratio Data------
@@ -35,8 +32,6 @@ Fiscal_Month <-gather(Fiscal_Month,"Year","Dates",3:12)
 head(Fiscal_Month)
 str(Fiscal_Month)
 
-
-
 #-------- Checking Company's List Date based on Number of Shares under Key Ratio Data------
 
 NumberShares <- Company_KeyRatio %>% filter(Key_Ratio_Items=="Shares Mil")
@@ -51,17 +46,14 @@ str(NumberShares)
 head(NumberShares)
 write.csv(NumberShares,file="C:\\Users\\Tse Young\\Desktop\\NumberShares.csv")
 
-
 Modified_Fiscal_Month <-inner_join(Fiscal_Month,NumberShares,by=c("Symbol","Year")) #Based on the column from Number of Shares, inner_join is used to determine the annual fiscal closing date for each company
 Modified_Fiscal_Month <- Modified_Fiscal_Month %>% mutate(Fiscal_Year_End=if_else(Dates.y=="NA","NA",Dates.x))
 Modified_Fiscal_Month <- Modified_Fiscal_Month[,c(1:3,7)]
 Modified_Fiscal_Month <- Modified_Fiscal_Month %>% spread(Year,Fiscal_Year_End)
-
 Modified_Fiscal_Month$Na_count <- apply(Modified_Fiscal_Month, 1, function(x) sum(is.na(x)))
-
-
 head(Modified_Fiscal_Month)
-Modified_Fiscal_Month <-Modified_Fiscal_Month %>% mutate(Start_Year_count = 2008+ Na_count)
+
+                                        Modified_Fiscal_Month <-Modified_Fiscal_Month %>% mutate(Start_Year_count = 2008+ Na_count)
 Modified_Fiscal_Month$Start_Year_count <- gsub("^","Y",Modified_Fiscal_Month$Start_Year_count)
 Fiscal_Month_Count <- Fiscal_Month
 colnames(Fiscal_Month_Count)[3] <- "Start_Year_count"
@@ -79,14 +71,9 @@ head(Modified_Fiscal_Month_Clean)
 
 #-------------Loading Returns Data using quantmod---------------------
 
-
-companylist
-str(companylist)
 companylist_only<- companylist[,1]
 companylist_only<-as.character(companylist_only)
 companylist_only
-
-
 
 #For extracting a  list of Symbols that are successfully downloaded
 
@@ -144,9 +131,6 @@ low <-data.frame(ddply(low, "rn", numcolwise(sum)))
 chickennnn_adjusted_stocksplit <- lapply(company_available_string,function(x) { adjustOHLC(get(x, pos=WoW), symbol.name=x, adjust=c("split"), 
                                                               use.Adjusted=FALSE)})
 
-
-
-
 #Finding quarterly return based on adjusted stock-split share price
 
 yearlow_quaterly<-lapply(chickennnn_adjusted_stocksplit,quarterlyReturn)
@@ -181,9 +165,6 @@ head(yearlow_quaterly)
 str(yearlow_quaterly_Q2)
 
 
-
-
-
 #Q3 onwards (March This Year)
 
 yearlow_quaterly_Q3 <- yearlow_quaterly %>%  mutate (Modified_Year = ifelse(Month=="03", Year-1,
@@ -201,8 +182,6 @@ yearlow_quaterly_Q3_Clean <- yearlow_quaterly_Q3[,c(1,2,7)]
 colnames(yearlow_quaterly_Q3_Clean)[c(2,3)] <- c("Year","Q3_Yearly_Return")
 yearlow_quaterly_Q3_Clean$Year <- gsub("^","Y",yearlow_quaterly_Q3_Clean$Year)
 head(yearlow_quaterly_Q3_Clean)
-
-
 
 #Q4 onwards (June This Year)
 
@@ -264,16 +243,13 @@ yearlow_quaterly_Q2_Clean$Year <- gsub("^","Y",yearlow_quaterly_Q2_Clean$Year)
 head(yearlow_quaterly_Q2)
 head(yearlow_quaterly_Q2_Clean)
 filter(yearlow_quaterly_Q2_Clean,Symbol=="MSFT")
-#Combnin all annual returns by quarter
-
+                                        
+#Combning all annual returns by quarter
 
 yearlow_quaterly_all <-  left_join(yearlow_quaterly_Q1_Clean, yearlow_quaterly_Q2_Clean) %>%
                             left_join(., yearlow_quaterly_Q3_Clean) %>% 
                                   left_join(.,yearlow_quaterly_Q4_Clean) 
 head(yearlow_quaterly_all)
-
-
-
 
 write.csv(yearlow_quaterly,file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly.csv")
 write.csv(yearlow_quaterly_all,file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly_all.csv")
@@ -299,7 +275,6 @@ setDT(Toilet, keep.rownames = TRUE)[] #Convert rownames into column "row" data
 colnames(Toilet)[1] <- "Symbol"
 colnames(Toilet)[2] <- "rn"
 Toilet <-Toilet[-1,]
-
 
 #Based on the row number, use inner_join as vlookup to find the dates aka. row.names
 taxitaxi<- inner_join( x=Toilet,y=taxi) 
