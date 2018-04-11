@@ -1,5 +1,9 @@
 Milestone Report
 ================
+Abstract
+----------
+This paper examines the effectiveness of Joseph D. Piotroski’s F-Score as an accounting-based fundamental analysis investment tool across a wide range of public listed firms with varying characteristics. F-Score has been proven to consistently identify and differentiate companies with high returns from low returns, despite originally conceived for the implementation on high book-to-market companies. The performance of F-Score is influeced by external factors such as global economic performance and investors’ confidence. F-Score’s effectiveness is also undermined by the simplicity of its financial indicators, especially when analyzing companies from different sectors, which adopts unique financial reporting format and standards. 
+
 Introduction
 ------------
 This study seeks to examine the usefulness of Joseph D. Piotroski’s F-Score which uses historical financial statement information to identify companies with superior performance as well as deploy it as a foundational base where other inputs can be modified to further improve on the original’s effectiveness.
@@ -212,7 +216,7 @@ Asset turnover is defined as total sales scaled by Beginning Year Assets. Sales 
 
 **Tabulating F-Scores**
 
-As noted under the literature review, instead of following the original groupings, High F-Score group consists of scores from 7-9 while Low F-Score group consists of score from 1-3.
+As noted under the literature review, instead of adhering to the original score groupings, High F-Score group consists of scores from 7-9 while Low F-Score group consists of score from 1-3.
 
 
 ### 2. Financial Fiscal Date Period
