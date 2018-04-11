@@ -150,11 +150,10 @@ The sample population of companies used is based from NASDAQ. There is a list of
 
 For financial information that is required for F-Score testing, MorningStar is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
-### Share Prices and Holding Returns
-
+### Share Prices 
 The R Package “Quantmod” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. These companies are removed from the testing population.
 
-For the computation of share price returns, quarterly returns are computed initially as stand alone variables, and subsequently combined as yearly returns, take into account companies' different fiscal year-end period. Returns are computed from the beginning of the fourth month after the firm's fiscal year-end to ensure that the annual financial statement are available by then. Furthermore, the returns on share price based on stock-splits or reverse stock-splits are readjust to ensure that returns are not inflated/deflated during the relevant testing period. 
+
 
 ### Data Collection Limitation & Biases
 
@@ -231,32 +230,26 @@ Having selected companies from a list under NASDAQ in 2017/2018, some of these c
 
 **Availability of Financial Information from MorningStar**
 
-First, the companies’ entire fiscal period is identified from the “Margin % Sales” row under key ratio statement as seen below:
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Margin%25Sales.png)
- 
-Under the assumption that a company is not publicly-listed based if the company does not have any shares/equity, Number of Shares is used as an indicator to identify the company’s start and end date. First, the total sum for each year column without shares (etc. NA) is tabulated. Second, this sum is added to the first date as per above to acquire the start date. There is no needed to take end date/delisting date into account as using the list of companies extracted from NASDAQ in 2017/2018 already nullify this potential issue. 
+Under the assumption that a company is not publicly-listed based if the company does not have any shares/equity, shares is used as an indicator to identify the company’s start and end date. There is no needed to take end date/delisting date into account as using the list of companies extracted from NASDAQ in 2017/2018 already nullify this potential issue. 
 
 **Availability of Trading Share Price from Yahoo Finance**
 
-The extraction of earlier trading share price dates is similar to the above from MorningStar, except that it deals with rows data instead of columns.  A function is written to identify the earliest non-NA row for each company. The row number is then used to identify the specific dates using the “inner_join” function.
+Based on the extraction of share price from Yahoo Finance, the earliest trading date can be identified by the earliest available share price information.
 
-**Setting Starting Date by comparing and combining both data sets**
+**Setting holding period by comparing and combining both data sets**
 
-As both data sets (Financial Information and Share Price) are required, the later of the two dates is used as the companies’ starting date for testing.  However, it should be noted that the starting date, if based on trading share price is minus by 1, as the financial information prior to the trading share price date can be used to assess for F-Score.  The formula in R would be as follows:
+As both data sets (Financial Information and Share Price) are required, the later of the two dates is used as the companies’ starting date for testing.  However, it should be noted that the starting date, if based on trading share price is minus by 1, as the financial information prior to the trading share price date can be used to assess for F-Score.  
 
->if_else(Financial Information Date > Trading Share Price Date , Financial Information, Trading Share Price Date -1))
+### 3. Share Price Returns
 
-### 3. Share Price and Returns
+For the computation of share price returns, quarterly returns are computed initially as stand alone variables, and subsequently combined as yearly returns, take into account companies' different fiscal year-end period. Returns are computed from the beginning of the fourth month after the firm's fiscal year-end to ensure that the annual financial statement are available by then. Furthermore, the returns on share price based on stock-splits or reverse stock-splits are readjust to ensure that returns are not inflated/deflated during the relevant testing period. 
 
-Data wrangling for share price is quite straight forward as data pulled from quantmod are clear and easy to use. The yearly holding returns extracted from quantmod are subsequently filtered using the Financial Fiscal Date Period as computed above. 
-Besides, quarterly returns were used to compute returns from Q2 to the following year Q1, in order to take into account for information time lag. However, this return is currently not in-use for the current testing as early preliminary testing shows that yearly returns are more accurate.
+### 4. Filtering of outliers 
 
-### 4. Combining F-Score and Holding Returns
-
-Combining F-Score and Holding Returns is relatively straightforward with the R package “dplyr”. To ensure that the companies’ shares are readily available for trades, an average daily trading volume of 10,000 is set as a basis for trade liquidity requirement. Holding returns with 0% are further filtered out as they represent trades inactivity.  Besides, holding returns above 200% are filtered out as outliers.   
-
-Additional information is added such as industry/sector groupings for each company for more detailed testing. 
+Companies with 0 F-Scores are filtered out due to the low number (22) of such companies,  which may cause violation of the normal distribution assumption for statistical testing. Besides, holding returns above 200% are filtered out as outliers.   
+	
+Additional information is also added such as industry/sector groupings for each company for more detailed testing. 
 
 Research Analysis/Findings
 --------------------------
