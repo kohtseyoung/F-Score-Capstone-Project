@@ -7,13 +7,10 @@ library(plyr)
 
 WoW <- new.env()
 
-
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
 companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
-
-
 
 #-------------Loading Returns Data using quantmod---------------------
 
@@ -23,8 +20,6 @@ str(companylist)
 companylist_only<- companylist[,1]
 companylist_only<-as.character(companylist_only)
 companylist_only
-
-
 
 sapply(companylist_only, function(x){
   try(
@@ -50,7 +45,6 @@ head(company_full_list)
 
 company_not_available <- anti_join(company_full_list,company_available,by="Symbol")
 
-
 Company_Symbol_List <- mget(ls(WoW),envir= WoW) 
 
 
@@ -62,9 +56,7 @@ ga_Volume <- ga[,grep("Volume",names(ga),ignore.case=T)]
 ga_Volume <- data.frame(ga_Volume[-c(3309,3312,3321)])
 ga_Volume<- add_rownames(ga_Volume,"Year")
 
-
 ga_Volume$Year <-gsub('.{6}$','',ga_Volume$Year)
-
 
 ga_Volume <- ga_Volume %>%  gather("Symbol","Trading_Volume",2:2051)
 ga_Volume$Symbol<-gsub(".Volume",'',ga_Volume$Symbol)
@@ -196,7 +188,7 @@ PE_Ratio$Items <- str_sub(PE_Ratio$Items, start=1, end=18)
 PE_Ratio$Items
 PE_Ratio <- PE_Ratio[,c(1,2,8,3:7)]
 head(PE_Ratio)
-?str_sub
+
 Currency_List <- unique(PE_Ratio$Currency)
 Currency_List
 getFX(Currency_List, from="2017-12-31",to="2017-12-31")
