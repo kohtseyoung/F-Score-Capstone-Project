@@ -147,34 +147,7 @@ chickennnn_adjusted_stocksplit <- lapply(company_available_string,function(x) { 
 
 
 
-#Finding annual return based on adjusted stock-split share price
-
-yearlow<-lapply(chickennnn_adjusted_stocksplit,annualReturn)
-yearlow <- do.call(cbind,yearlow) #columnbind the list
-yearlow<- data.frame(yearlow) #convert into data.frame format
-names(yearlow) <-ls(WoW) #apply company names
-yearlow <- setDT(yearlow,keep.rownames = TRUE)[]
-yearlow$rn <- gsub('.{6}$', '', yearlow$rn)
-yearlow[is.na(yearlow)] <- 0
-yearlow <-data.frame(ddply(yearlow, "rn", numcolwise(sum)))
-colnames(yearlow)[1] <-"Symbol"
-
-
-yearlow<-t(yearlow) #transpose
-yearlow<-data.frame(yearlow)
-yearlow <- setDT(yearlow,keep.rownames = TRUE)[]
-colnames(yearlow) <- c("Symbol","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018")
-yearlow<- yearlow[-1,]
-
-yearlow <- setDT(yearlow,keep.rownames = TRUE)[]
-head(yearlow)
-
-
-
-write.csv(yearlow,file="C:\\Users\\Tse Young\\Desktop\\yearlow.csv")
-
-
-#Finding quarterly return based on adjusted stock-split share price (not in-used)
+#Finding quarterly return based on adjusted stock-split share price
 
 yearlow_quaterly<-lapply(chickennnn_adjusted_stocksplit,quarterlyReturn)
 yearlow_quaterly <- do.call(cbind,yearlow_quaterly) #columnbind the list
@@ -403,23 +376,3 @@ write.csv(modified_return_quaterly_clean,"C:\\Users\\Tse Young\\Desktop\\Data Sc
 
 
 
-#Annual Returns starting from Q1 onwards
-
-yearlow <- yearlow[,c(1,5:14)]
-yearlow
-colnames(yearlow)[2:11] <- paste("Y", colnames(yearlow)[2:11], sep = "")
-yearlow_clean <- yearlow %>% gather("Year","Return",Y2008:Y2017) 
-yearlow_clean$Year <- gsub("Y","",yearlow_clean$Year)
-colnames(yearlow_clean)[1] <- "Symbol"
-yearlow_clean
-write.csv(yearlow_clean,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Annual_Return.csv")
-  
-#Combine
-modified_return <- inner_join(yearlow_clean,Holding_Period_Matrix)
-modified_return <- modified_return %>% mutate(Holding_Return=ifelse(Indicator==0,0,Return))
-modified_return_clean <- modified_return[,c(1,2,5)]
-modified_return_clean$Holding_Return <- modified_return_clean$Holding_Return+1 
-modified_return_clean$Year <-paste("Y",modified_return_clean$Year,sep="")
-modified_return_clean
-
-write.csv(modified_return_clean,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Return_Final.csv")
