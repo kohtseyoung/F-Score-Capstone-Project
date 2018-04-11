@@ -50,9 +50,9 @@ In conclusion, while recent economy changes may downplay F-Score’s usefulness,
 
 **Market Efficiency Hypothesis**
 
-The rationale of the original F-Score is firmly based on taking advantage of the varying degrees of the Market Efficiency hypothesis, which influence the extent of share prices incorporating financial information.  It relies on weak market efficiency found amongst financial distressed companies due to the the slow diseemination of financial information, stemming form low coverage from financial institution for ample investment opportunities.   
+The original F-Score is firmly based on taking advantage of the varying degrees of the Market Efficiency hypothesis, which influence the extent of share prices incorporating financial information.  
 
-Conversely, this also affect high profile companies where current financial information are readily available from multiple sources. The application of F-Score based on financial statements may be too slow in identifying superior returns as these information may already be reflected in the share price. Therefore, the application of F-Score on companies in general may be dampenned.  
+The original F-Score states that due to the lack of current financial information of financial distressed companies instigated by low coverage from financial institutions, it has bolstered the informational weight of financial statements and its influence on holding returns. Conversely, taking into account of the rapid dissemination of readily available public information for companies, financial information from financial statements should not have as a significant impact on its holding returns.Therefore, the application of F-Score on companies in general may be dampenned.  
 
 **F-Score Indicators**
 
@@ -154,7 +154,7 @@ For financial information that is required for F-Score testing, MorningStar is u
 
 The R Package “Quantmod” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. These companies are removed from the testing population.
 
-For the computation of share price resturns, quarterly returns are computed initially as stand alone variables, and subsequently combined as yearly returns, take into account companies' different fiscal year-end period. Furthermore, the returns on share price based on stock-splits or reverse stock-splits are readjust to ensure that returns are not inflated/deflated during the relevant testing period. 
+For the computation of share price returns, quarterly returns are computed initially as stand alone variables, and subsequently combined as yearly returns, take into account companies' different fiscal year-end period. Returns are computed from the beginning of the fourth month after the firm's fiscal year-end to ensure that the annual financial statement are available by then. Furthermore, the returns on share price based on stock-splits or reverse stock-splits are readjust to ensure that returns are not inflated/deflated during the relevant testing period. 
 
 ### Data Collection Limitation & Biases
 
@@ -422,10 +422,25 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 
 As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in Y2009 and Y2017.  F-Score remains effective from Y2014 to Y2017.  
 
-For Y2009, a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is used to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
+For Y2009, the High F-Score a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is used to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. Nevertheless, it can be argued that such factors should have an effect on companies from both high and low groups, thus the difference should remain significant. In light of this, economic downturn can be inferred to have a higher impact on higher performing companies.  
 
 For Y2017, despite the significant difference between mean returns from the High and Low F Score group, the high P-value is due to high standard error and volatility, contributed by its low sample size. For future testing, an increase in sample size would assist in reducing the P-Value. 
 
 Therefore, we can reject the null hypothesis. The effectiveness of F-Score varies across different years, particularly during times of recession. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return.
+
+
+Conclusion
+--------------
+
+F-Score serves as an effective indicator for identifying returns of companies based on its financial performance.  The holding returns are relatively slow in reflecting performance of these publicly traded companies. This rejects the market efficiency hypothesis that states that share prices always incorporate and reflect all readily information. 
+
+Modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
+
+For practical investment application, investors can utilize F-Score to partake in multiple investment strategies to attain their preferred risk exposure (Company, Sector and Market). Longing high F-Score companies will give investors exposure to both companies and market risks. Buying the indices will give investors exposure to market risks, while eliminating company specific risk. Longing high F-Score and shorting low F-Score on the other hand, will provide company risks exposure and partially eliminate market risks. The reason being, based on the findings above, market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. Investors can also further expose themselves to sector risk by applying the above three strategies in selected preferred sectors. Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies include different forms of risks. 
+
+Suggestions for further research
+--------------
+
+Based on the findings that “Change in Number of Shares” does not function as an effective F-Score indicator, it can be inferred that a company’s capital structure health plays a smaller significance over identifying returns for non-financially distressed companies. Suggestions for further research may be to test the effectiveness of all individual indicators and place difference weightage on each indicator to maximise its explanatory power.
 
 
