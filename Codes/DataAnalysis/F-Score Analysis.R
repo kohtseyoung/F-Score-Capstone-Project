@@ -14,14 +14,10 @@ library(wesanderson)
 #To read Company F-Scores and Returns
 
 Company_F_Score_Full <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\F_Score_Full_Final.csv")
-
 Company_Returns <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Quaterly_Return_Final.csv")
 Company_F_Score_Fiscal_Year <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Holding_Period_Matrix.csv")
 Company_Low_Trading_Volume<-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Volume_Low_Trades.csv")
-
 Company_F_Score_Classes <- read.csv(file="C:/Users/Tse Young/Desktop/F_Score_Tally_Full_Final.csv")
-
-
 
 #-------- Creating Full Key Ratio Data Set--------
 
@@ -50,11 +46,7 @@ head(Company_F_Score_Fiscal_Year)
 str(Company_F_Score_Fiscal_Year)
 
 
-
-
-
 #---------Company_F_Score_Inputs----------#
-
 
 
 Company_F_Score_Only <- Company_F_Score_Full[,c(2:3,22)] # To filter out F-Score Only
@@ -161,7 +153,7 @@ Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes$F.Score <- as.intege
 head(Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes)
 
 
-write.csv(Company_F_Score_Grouping_Returns_Filtered_PE_Industry_Classes,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\PE_Industry_Classes_Filtered.csv")
+write.csv(Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\PE_Industry_Classes_Filtered.csv")
 
 
 ##################################################################################################################################
@@ -241,7 +233,6 @@ t.test(Holding_Return ~ F.Score_Grouping,data = Company_F_Score_Grouping_Only_Vo
 #Hypothesis 4: - If Hypothesis 1 is null, the difference between High F-Score and Low F-Score group's market adjusted return across different industries = 0
 
 
-
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Sector=="Technology"))
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Sector=="Transportation"))
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Sector=="Capital Goods"))
@@ -280,7 +271,6 @@ ScatterPlot_Group_Sector_Part2
 
 #Hypothesis 5: - If Hypothesis 1 is null, all 3 groups to tabulate F-Score are significant independent factors in assessing returns
 
-
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Year=="Y2009"))
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Year=="Y2010"))
 t.test(Holding_Return ~ F.Score_Grouping,data =filter(Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,Year=="Y2011"))
@@ -297,7 +287,6 @@ Hypothesis5_Data <- HSD.test(ANOVA_Year_Group, "Year", group=TRUE) # For generat
 Hypothesis5_Data
 
   #Hypothesis 5 Plots
-
 
 ScatterPlot_Group_Year <-ggplot (Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry,aes(x=F.Score_Grouping,y=Holding_Return,color=Year)) +geom_point()+facet_grid(~Year) +geom_jitter()+stat_summary(fun.y=mean,geom="line",lwd=2,aes(group=1)) +scale_x_discrete(labels=c("High","Low"))
 
