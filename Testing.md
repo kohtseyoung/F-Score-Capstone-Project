@@ -275,7 +275,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 **Findings**
 
-From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 15% compared to Low F-Score companies. Besides, High F-Score companies also have lower returns volatilty compared to Low F-Score companies as inferred from the summary data and plots. 
+From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 26.8% compared to Low F-Score companies. Besides, High F-Score companies also have lower returns volatilty compared to Low F-Score companies as inferred from the summary data and plots. 
 
 There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positively skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present between High and Low F-Score companies.
 
@@ -305,7 +305,7 @@ Empirical results show that the original F-Score grouping can optionally include
 
 **Findings**
 
-As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant changes in returns between the following F-Scores: "1 -> 2", "3 -> 8", "8-9". Focusing on these three significant increase, F-Score 1 higher returns is countered by its high return volality (the highest Standard Deviation). F-Scores from 3 to 8 shows to have both higher returns and lower return volatility than its previous scores. For "8-9", F-Score 8 despite having higher returns, it also suffered from a slightly higher return volatity compared to F-Score 9. 
+As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant changes in returns between the following F-Scores: "1 -> 2", "3 -> 8", "8-9". Focusing on these three significant increase, F-Score 1 higher returns is countered by its high return volality (the highest Standard Deviation).  F-Scores from 3 to 8 shows to have both higher returns and lower return volatility than its previous scores. For "8-9", F-Score 8 despite having higher returns, it also suffered from a slightly higher return volatity compared to F-Score 9. 
 
 From the results of TukeyHD test, the 9 F-Scores returns have significant difference between all scores. This finding enables a high flexiblity and autonomy for the assignment of F-Score into the Low and High groups. 
 
@@ -329,7 +329,7 @@ Sharpe Ratio analysis is further performed to determine the trade-off of excess 
 
 Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above (the lowest 3 Sharpe Ratio). On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis due to having the top 3 Sharpe Ratio.
 
-Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 2-3 into Low F-Score and 7 into High F-Score in order to enchance returns, based on their risk and return trade-off.
+Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 2-3 into Low F-Score and 7 into High F-Score in order to enchance returns, based on their risk and return trade-off preferences.
 
 ### Hypothesis 3
 
@@ -374,13 +374,11 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Sector_Part1.png)
 
-As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Basic Industry, Energy and Consumer Non-Durables. This is especially true for companies in the Energy as the mean returns for its Low F-Score group is higher than the High F-Score group.
+As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Public Utilities, Energy and Consumer Non-Durables. This is especially true for companies in th ePublic Utilities sector as the mean returns for its Low F-Score group is higher than the High F-Score group.
 
-As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. It is expected for companies under the Energy, Public Utilities and Basic Industry, as similar to companies under the Finance Sector which was initially filtered out, these companies adhere to financial reporting standards unique to their sectors. 
+As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. Similarly to companies from the finance sector, companies from the Energy and Public Utilities sector have to adhere to financial reporting standards unique to their sectors. This would dampen the explanatory power of F-Score indicators.
 
-For Capital Goods, its P-Value of 6% is only slightly above the significance value of 95%.  Thus, an investigation was prompt to determine companies that negatively affect the P-Value. Our findings shows that that by removing companies from the industry “Pollution Control Equipment”, the P-Value will fall within 5%.
-
-Lastly for Consumer Services, despite having a high P-value, the High F-Score mean returns are higher (approx. 41%) than the Low F-Score group, reflecting some degree of effectiveness. A probable reason for the high P-value is due to the difference in business model for such companies, albeit not as unique of those from the Energy, Public Utilities and Finance Sectors. Service companies’ businesses are usually contractual in nature, their service pricing are consistently based on a flat percentage margin above its expenses. The stability of its margin and sales will render indicators under “Profitability” group ineffective as these indicators monitors the changes of such values.
+Lastly for Consumer Non-Durables, the high P-value is mainly due to its high Low F-Score mean returns. In particular, companies from the Food Distribution industry presents as outliers that skewed the returns from low F-Score companies. 
 
 Therefore, we cannot reject the null hypothesis that there is no difference between High F-Score and Low F-Score group’s market adjusted return across different industries.
 
@@ -392,23 +390,25 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 
 |Year	|No. Sample	|High	|Low	|Differences	|P-value	|Significant at 95%?
 |:-----:|:-------------:|-----:|:-----:|:-------------:|:-------------:|:-----:|
-|Y2009	|342		|0.514	|0.434	|0.439		|0.24		|**No**
-|Y2010	|412		|0.274	|0.142	|0.169		|0.03		|Yes
-|Y2011	|401		|0.078	|-0.094	|-0.018		|0.00		|Yes
-|Y2012	|353		|0.243	|0.062	|0.159		|0.00		|Yes
-|Y2013	|427		|0.362	|0.156	|0.383		|0.00		|Yes
-|Y2014	|491		|0.168	|-0.093	|0.134		|0.00		|Yes
-|Y2015	|534		|0.053	|-0.323	|0.057		|0.00		|Yes
-|Y2016	|670		|0.323	|-0.011	|0.075		|0.00		|Yes
-|Y2017	|59		|0.219	|0.102	|0.282		|0.043		|**No**
+|Y2009	|342		|0.514	|0.434	|0.080		|0.24		|**No**
+|Y2010	|412		|0.274	|0.142	|0.132		|0.03		|Yes
+|Y2011	|401		|0.078	|-0.094	|0.171		|0.00		|Yes
+|Y2012	|353		|0.243	|0.062	|0.180		|0.00		|Yes
+|Y2013	|427		|0.362	|0.156	|0.206		|0.00		|Yes
+|Y2014	|491		|0.168	|-0.093	|0.262		|0.00		|Yes
+|Y2015	|534		|0.053	|-0.323	|0.375		|0.00		|Yes
+|Y2016	|670		|0.323	|-0.011	|0.334		|0.00		|Yes
+|Y2017	|59		|0.219	|0.102	|0.117		|0.43		|**No**
 
 **Scatter Line Plot**
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Year.png)
 
-As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in the 1st half of the dataset (from Y2009 to Y2013).  F-Score remains effective from Y2014 to Y2017.  
+As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in Y2009 and Y2017.  F-Score remains effective from Y2014 to Y2017.  
 
-A possible explanation would be due to the 2008 – 2009 World Financial Crisis and the 2010 – 2013 European Sovereign Debt Crisis, dampening the effectiveness of the F-Score indicator. As previously noted, F-Score is use to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
+For Y2009, a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is use to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
+
+For Y2017, despite the significant differnce between mean returns from the High and Low F Score group. The main reason for the high P-value is due to high T-Value and standard error, contributed a low sample size. For future testing, an increase in sample size would assist in reducing the P-Value. 
 
 Therefore, we can reject the null hypothesis as the effectiveness of F-Score varies across different years. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return, especially during economic downturns.
 
