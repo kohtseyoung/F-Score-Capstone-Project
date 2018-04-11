@@ -247,7 +247,7 @@ For the computation of share price returns, quarterly returns are computed initi
 
 ### 4. Filtering of outliers 
 
-Companies with 0 F-Scores are filtered out due to the low number (22) of such companies,  which may cause violation of the normal distribution assumption for statistical testing. Besides, holding returns above 200% are filtered out as outliers.   
+Companies with 0 F-Scores are filtered out due to the low number (22) of such companies,  which may cause violation of the normal distribution assumption for statistical testing. Besides, holding returns above 200% are filtered out as outliers. Companies with daily trading volumes below 10,000 shares are also excluded from testing to take into account the trading liquidity of tested companies. 
 	
 Additional information is also added such as industry/sector groupings for each company for more detailed testing. 
 
