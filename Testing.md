@@ -94,9 +94,9 @@ Alternate: The High/Low grouping based on F-Score is not consistent with the ori
 
 **Hypothesis 3:**
 
-Null: Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
+Null: Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
 
-Alternate: Changing increase in number of shares as a positive indicator yields lesser or no difference in returns (<=Original F-Score)
+Alternate: Changing increase in number of shares as a positive indicator yields greater returns (>Original F-Score)
 
 *Explanation*: The hypothesis serves to test the explanatory power of “Change in number of shares” Indicator, simultaneously assessing whether the Pecking Order Theory (refer to Literature Review) holds true.
 
@@ -114,7 +114,7 @@ Null: If Hypothesis 1 is null, the difference between High F-Score and Low F-Sco
 
 Alternate: If Hypothesis 1 is null,  the difference between High F-Score and Low F-Score group’s market adjusted return across different years >= 0
 
-*Explanation*: The hypothesis serves to evaluate whether there are significant difference between the explanatory powers between the 3 groups of F-Score indicators.
+*Explanation*: The hypothesis serves to evaluate whether explanatory power of the F-Score is affected by business cycles or other time factors.
 
 
 
@@ -151,6 +151,8 @@ For the computation of share price resturns, quarterly returns are computed init
 Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance.
 
 As the companies tested are those listed on NASDAQ in 2017 for the period 2008-2017, there will be a significant survivorship bias as companies with low performance that are subsequently delisted from the period 2008-2017 would not be part of the testing population. This would inevitably overstate the returns of low F-Score companies.
+
+Lastly, some financial data collected are rounded up to the nearest million. This may pose as an issue for identifying and analyzing activities of companies with smaller market cap. 
 
 Data Wrangling
 --------------
@@ -333,19 +335,23 @@ Therefore, although we can reject the null hypothesis as noted from the TukeyHD 
 
 ### Hypothesis 3
 
-Empirical results show that changing F-Score indicator "Increase in number of shares" from a negative indicator to a positive indicator do not yield higher returns.
+Empirical results show that changing F-Score indicator "Increase in number of shares" from a negative indicator to a positive indicator do not yield significantly higher returns.
 
 **Summary Data**
 
 |F-Score	|High		|Std(High) 	|Low		| Std(Low)	|P-value	|Significant at 95%?|
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-|Original	|0.191		|0.440	 	|0.0490		|0.589		|1.95E-11	|Yes		|
-|Modified	|0.179		|0.466	 	|0.0837		|0.546		|4.75E-05	|Yes		|		
-|Difference	|0.0129		|		|-0.0347	|		|		|		|
+|Original	|0.249		|0.443	 	|-0.0181	|0.577		|2.2E-16	|Yes		|
+|Modified	|0.249		|0.443	 	|-0.0248	|0.574		|2.2E-16	|Yes		|		
+|Difference	|0		|		|-0.0067	|		|		|		|
 
-From the data shown above, the original F-Score performs better than the modified F-Score in identifying both superior and subpar companies. From the table above, the original High F-Score grouping have both higher mean returns and lower return volatility rate, while the original Low F-Score grouping have both lower mean returns and high return volatility compared to modified F-Score.
+From the data shown above, the modified F-Score performs better than the original F-Score in identifying subpar companies. The modified Low F-Score grouping have a slighty lower mean returns and volatility rate.
 
-Based on the findings, we cannot reject the null hypothesis. It is consistent with the Pecking Order Theory as elaborated under the Literature Review Section that issuing of shares sends a negative signal to investors that the company's is overvalued. Therefore, rather than reflecting the health of a company’s capital structure as originally intended, the "increase in number of shares" still serves as a valuable signalling tool for bridging asymmetrical information about the company’s valuation between managers and investors.
+Based on the findings, the "Change in number of shares"  is ineffective in identifying High F-Score companies. Conversely, it acts as a positive indicator to a certain degree in identifying companies with low performance. It is inconsistent with the Pecking Order Theory regarding it being a negative indicator. 
+
+A possible rationale for its one-sided impact could be investors are less concerned with capital financial structure for companies with healthy financial performance. Besides, company with low performance, coupled with decrease in number of shares, may signal to investors on potential downsizing plans, indicating no growth/profitable opportunities for its current core businesses. 
+
+Therefore, we cannot reject the null hypothesis. Although the "Change in Number of Shares" may serve as a significant indicator over financially distressed companies as seen the Original F-Score paper, it yields low explanatory power in identifying high and low performing companies when applied accross companies in general.
 
 ### Hypothesis 4
 
@@ -378,9 +384,9 @@ As inferred from the data above, F-Score does not serve as an effective investme
 
 As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. Similarly to companies from the finance sector, companies from the Energy and Public Utilities sector have to adhere to financial reporting standards unique to their sectors. This would dampen the explanatory power of F-Score indicators.
 
-Lastly for Consumer Non-Durables, the high P-value is mainly due to its high Low F-Score mean returns. In particular, companies from the Food Distribution industry presents as outliers that skewed the returns from low F-Score companies. 
+Lastly for Consumer Non-Durables, the high P-value is mainly due to its high Low F-Score mean returns. In particular, companies from the Food Distribution industry presents skewed the returns from Low F-Score companies. However, the specifc reason cannot be accurately identified whether its due to outliers or the nature of such business, based on its low sample size (2 companies).
 
-Therefore, we cannot reject the null hypothesis that there is no difference between High F-Score and Low F-Score group’s market adjusted return across different industries.
+Therefore, we cannot reject the null hypothesis that there is no difference between High F-Score and Low F-Score group’s market adjusted return for majority of Sectors tested, with the exception of Public Utilities, Energy and Consumer Non-Durables sectors.
 
 ### Hypothesis 5
 
@@ -406,10 +412,10 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 
 As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in Y2009 and Y2017.  F-Score remains effective from Y2014 to Y2017.  
 
-For Y2009, a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is use to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
+For Y2009, a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is used to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. 
 
-For Y2017, despite the significant differnce between mean returns from the High and Low F Score group. The main reason for the high P-value is due to high T-Value and standard error, contributed a low sample size. For future testing, an increase in sample size would assist in reducing the P-Value. 
+For Y2017, despite the significant difference between mean returns from the High and Low F Score group, the high P-value is due to high standard error and volatility, contributed by its low sample size. For future testing, an increase in sample size would assist in reducing the P-Value. 
 
-Therefore, we can reject the null hypothesis as the effectiveness of F-Score varies across different years. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return, especially during economic downturns.
+Therefore, we can reject the null hypothesis. The effectiveness of F-Score varies across different years, particularly during times of recession. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return.
 
 
