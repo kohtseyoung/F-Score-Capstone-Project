@@ -46,11 +46,17 @@ While the aforementioned events may undermine the credibility of the F-Score, am
 
 In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances give rise to strong motivation and purpose to reassess the credibility of the F-Score and modify the indicators accordingly if needed to suit the different stance of today’s economy. 
 
-### Extension of F-Score's Applicability  
+### Extension of F-Score's Applicability to Non-Financially Distressed Companies
+
+**Market Efficiency Hypothesis**
+
+The rationale of the original F-Score is firmly based on taking advantage of the varying degrees of the Market Efficiency hypothesis, which influence the extent of share prices incorporating financial information.  It relies on weak market efficiency found amongst financial distressed companies due to the the slow diseemination of financial information, stemming form low coverage from financial institution for ample investment opportunities.   
+
+Conversely, this also affect high profile companies where current financial information are readily available from multiple sources. The application of F-Score based on financial statements may be too slow in identifying superior returns as these information may already be reflected in the share price. Therefore, the application of F-Score on companies in general may be dampenned.  
 
 **F-Score Indicators**
 
-F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. Therefore, the rationale behind each F-Score’s indicators reflects the performance of such firms while taking their financial characteristics into account.
+F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. Therefore, the rationale behind each F-Score’s indicators reflects the performance of such firms while taking their financial characteristics into consideration.
 
 Using F-Score as a general tool for evaluating companies’ return regardless of their book-to-market value may not be as effective. To assess the applicability of F-Score on all companies, F-Score indicators relevant specifically to high book-to-market companies should be discerned and their basis evaluated. 
 
