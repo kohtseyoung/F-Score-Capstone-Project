@@ -264,7 +264,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 |Violin Plot|Scatter Line Plot|
 |:-------------------------:|:-------------------------:|
-<img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Violin_Plot_Group.png" widthF-="473" height="550" />  | <img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/GG_Line_Group.png" width="473" height="550" />|
+<img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/Violin_Plot_Group.png" widthF-="473" height="550" />  | <img src="https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/GG_Line.png" width="473" height="550" />|
 
 					
 **Welch Two Sample t-test**		
@@ -301,7 +301,7 @@ Empirical results show that the original F-Score grouping can optionally include
 
 **Scatter Line Plot**
 
-![Plot](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/GG_Line_All.png)
+![Plot](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/GG_Line_All.png)
 
 **Findings**
 
@@ -370,9 +370,9 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 **Scatter Line Plot**
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_2(resize).png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Sector_Part2.png)
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Industy_Scatter_Plot_Part_1(resize).png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Sector_Part1.png)
 
 As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Basic Industry, Energy and Consumer Non-Durables. This is especially true for companies in the Energy as the mean returns for its Low F-Score group is higher than the High F-Score group.
 
@@ -404,7 +404,7 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 
 **Scatter Line Plot**
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/ScatterPlot_Group_Year.png)
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Year.png)
 
 As shown from the data above, F-Score was not useful in identifying companies with stronger returns and weaker returns consistently across the years. It should be noted that this inconsistency was only noted in the 1st half of the dataset (from Y2009 to Y2013).  F-Score remains effective from Y2014 to Y2017.  
 
