@@ -430,7 +430,7 @@ F-Score serves as an effective investment analysis tool for identifying share ho
 
 ### Theortical aspect
 
-In light of the ability to earn higher returns through F-Score analysis, this proposes that share prices does not timely incorporate and reflect all readily financial information. The weak market hypothesis holds true not only for finanlly distressed companies but also frequent publicly traded companies. Besides F-Score, this has in turn promotes the general use of fundamental analysis that is heavily based on the assumption of this financial theory.
+In light of the ability to earn higher returns through F-Score analysis, this proposes that share prices does not timely incorporate and reflect all readily financial information. The weak market hypothesis holds true not only for finanlly distressed companies but also liquid publicly traded companies. Besides F-Score, this has in turn promotes the general use of fundamental analysis that is heavily based on the assumption of this financial theory.
 
 Conversely,  the F-Score indicator "Change in number of shares" being slightly positively correlated with holding returns for low F-Score companies is in violation of the Pecking Order Theory. Besides, from the results shown, investors place a heavier emphasis on capital structure changes for company experiencing low financial performance. This shows that this indicator does not functions as an effective gauge for companies in general. A suggestion for further research may include applying different weightage on each indicator to distinguish and maximise F-Score's explanatory power for non-financial distressed companies.   
 
@@ -438,12 +438,16 @@ Conversely,  the F-Score indicator "Change in number of shares" being slightly p
 
 Regarding the application of F-Score, modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
 
-For applying F-Score in conjunction with practical investment strategies, investors can utilize F-Score to partake in multiple investment method to attain their preferred risk exposure (Company, Sector and Market). 
-- Longing high F-Score companies will give investors exposure to both companies and market risks.
-- Buying the indices will give investors exposure to market risks, while eliminating company specific risk. 
-- Longing high F-Score and shorting low F-Score on the other hand, will provide company risks exposure and partially eliminate market risks. The reason being, based on the findings above, market risk has a higher impact on high F-Score companies compared to low F-Score companies. 
+For applying F-Score in conjunction with practical investment strategies, investors can utilize F-Score to partake in multiple investment method to attain their preferred risk exposure (Company, Sector and Market). These strategies are as follows:-
 
-Therefore, the market risks cannot be equally offset from the long-short investment strategy. Investors can also further expose themselves to sector risk by applying the above three strategies in selected preferred sectors. Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies include different forms of risks. 
+- Longing high F-Score companies will provide investors exposure to both companies and market risks.
+- Buying the indices will provide investors exposure to market risks, while eliminating company specific risk. 
+- Longing high F-Score and shorting low F-Score (also known as market neutral strategy) will provide company risks exposure and partially eliminate market risks.
+- Execute the above 3 strategies in specific sectors will provide additioanl sector risks exposure.
+
+The reason being for the partially elimination of market risk for long-short strategy is based on the research findings that market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. 
+
+Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies that include different forms of risks. 
 
 References 
 ---------
