@@ -29,7 +29,7 @@ getSymbols.R -> Company_Holding_Quaterly_Return_Final.csv
 Company F-Indicators.R - > F_Score_Full_Final.csv, Holding_Period_Matrix.csv
 
 #### Computation of Company Trading Volume
-Company Volume.R  -> Company_Volume_Low_Trades.csv
+Company Volume.R  -> Company_Volume_Low_Trades.csv, Company_PE_Ratio
 
 3.) Data Analysis
 -------------------
