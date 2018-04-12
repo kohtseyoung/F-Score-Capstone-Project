@@ -427,13 +427,28 @@ Therefore, we can reject the null hypothesis. The effectiveness of F-Score varie
 Conclusion
 --------------
 
-F-Score serves as an effective indicator for identifying returns of companies based on its financial performance.  The holding returns are relatively slow in reflecting performance of these publicly traded companies. This rejects the market efficiency hypothesis that states that share prices always incorporate and reflect all readily information. 
+F-Score serves as an effective investment analysis tool for identifying share holding returns of companies based on financial performance. The results yields multiple implications in both theoritical and practical asepcts of the F-Score. 
 
-Modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
+### Theortical aspect
+
+In light of the ability to earn higher returns through F-Score analysis, this proposes that share prices does not timely incorporate and reflect all readily financial information. Therefore, the weak market hypothesis holds true not only for finanlly distressed companies but also frequent publicly traded companies. 
+
+Conversely,  the F-Score indicator "Change in number of shares" being slightly positively correlated with holding returns for low F-Score companies is in violation of the Pecking Order Theory. Investors place a heavier emphasis on capital structure changes for company experiencing low financial performance. This shows that this indicator does not functions as an effective gauge for companies in general. A suggestion for further research may include applying different weightage on each indicator to distinguish and maximise F-Score's explanatory power for non-financial distressed companies.   
+
+### Practical aspect
+
+Regarding the application of F-Score, modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
 
 For practical investment application, investors can utilize F-Score to partake in multiple investment strategies to attain their preferred risk exposure (Company, Sector and Market). Longing high F-Score companies will give investors exposure to both companies and market risks. Buying the indices will give investors exposure to market risks, while eliminating company specific risk. Longing high F-Score and shorting low F-Score on the other hand, will provide company risks exposure and partially eliminate market risks. The reason being, based on the findings above, market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. Investors can also further expose themselves to sector risk by applying the above three strategies in selected preferred sectors. Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies include different forms of risks. 
 
-Suggestions for further research
---------------
+References 
+---------
 
-Based on the findings that “Change in Number of Shares” does not function as an effective F-Score indicator, it can be inferred that a company’s capital structure health plays a smaller significance over identifying returns for non-financially distressed companies. Suggestions for further research may be to test the effectiveness of all individual indicators and place difference weightage on each indicator to maximise its explanatory power.
+1) Piotroski, J. (2000). Value Investing: The Use of Historical Financial Statement Information to Separate Winners from Losers. Journal of Accounting Research
+
+2) Markus Mohr, J. (2018). Utility of Piotroski F-Score for predicting Growth-Stock Returns.
+
+3) Joshipura, N. (2018). Piotroski’s F-Score: The science of value investing. [online] Moneycontrol. Available at: https://www.moneycontrol.com/news/business/personal-finance/piotroskis-f-score-the-science-of-value-investing-2249957.html [Accessed 12 Apr. 2018].
+
+4) Gray, W. (2018). Value Investing Research: Simple Methods to Improve the Piotroski F-Score. [online] Alpha Architect. Available at: https://alphaarchitect.com/2015/05/05/value-investing-research-simple-methods-to-improve-the-piotroski-f-score/ [Accessed 12 Apr. 2018].
+
