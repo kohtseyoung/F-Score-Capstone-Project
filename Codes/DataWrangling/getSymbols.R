@@ -417,8 +417,10 @@ yearlow_quaterly_all <-  left_join(yearlow_quaterly_Q1_Clean, yearlow_quaterly_Q
                                   left_join(.,yearlow_quaterly_Q4_Clean) 
 head(yearlow_quaterly_all)
 
-write.csv(yearlow_quaterly,file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly.csv")
-write.csv(yearlow_quaterly_all,file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly_all.csv")
+write.csv(yearlow_quaterly,
+          file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly.csv")
+write.csv(yearlow_quaterly_all,
+          file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly_all.csv")
 
 
 
@@ -556,16 +558,24 @@ Holding_Period_Matrix <- Holding_Period_Matrix %>% gather("Year","Indicator",Y20
 head(Holding_Period_Matrix)
 head(Holding_Period)
 
-write.csv(Holding_Period_Matrix,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Holding_Period_Matrix.csv")
+write.csv(Holding_Period_Matrix,
+          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Holding_Period_Matrix.csv")
 
 #Combining yearly returns with holding period matrix
 modified_return_quaterly <- inner_join(yearlow_quaterly_all,Holding_Period_Matrix)
 
 #Based on holding period matrix, holding returns = NA when it is not within holding period
-modified_return_quaterly <- modified_return_quaterly %>% mutate(Q1_Holding_Return=ifelse(Indicator==0,NA,Q1_Yearly_Return))
-modified_return_quaterly <- modified_return_quaterly %>% mutate(Q2_Holding_Return=ifelse(Indicator==0,NA,Q2_Yearly_Return))
-modified_return_quaterly <- modified_return_quaterly %>% mutate(Q3_Holding_Return=ifelse(Indicator==0,NA,Q3_Yearly_Return))
-modified_return_quaterly <- modified_return_quaterly %>% mutate(Q4_Holding_Return=ifelse(Indicator==0,NA,Q4_Yearly_Return))
+modified_return_quaterly <- modified_return_quaterly %>% mutate(Q1_Holding_Return=
+                                                                ifelse(Indicator==0,NA,Q1_Yearly_Return))
+
+modified_return_quaterly <- modified_return_quaterly %>% mutate(Q2_Holding_Return=
+                                                                ifelse(Indicator==0,NA,Q2_Yearly_Return))
+
+modified_return_quaterly <- modified_return_quaterly %>% mutate(Q3_Holding_Return=
+                                                                ifelse(Indicator==0,NA,Q3_Yearly_Return))
+
+modified_return_quaterly <- modified_return_quaterly %>% mutate(Q4_Holding_Return=
+                                                                ifelse(Indicator==0,NA,Q4_Yearly_Return))
 
 #Summurizing and formatting of dataset
 modified_return_quaterly_clean <- modified_return_quaterly[,c(1,2,8:11)]
@@ -573,7 +583,8 @@ modified_return_quaterly_clean <- modified_return_quaterly_clean %>%gather ("Qua
 modified_return_quaterly_clean$Quarter <- substr(modified_return_quaterly_clean$Quarter,1,2)
 head(modified_return_quaterly_clean)
 
-write.csv(modified_return_quaterly_clean,"C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Quaterly_Return_Final.csv")
+write.csv(modified_return_quaterly_clean,
+          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Quaterly_Return_Final.csv")
 
 
 
