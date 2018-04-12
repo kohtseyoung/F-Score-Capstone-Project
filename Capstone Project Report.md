@@ -56,7 +56,7 @@ The original F-Score is firmly based on taking advantage of the varying degrees 
 
 The original F-Score states that due to the lack of current financial information of financial distressed companies instigated by low coverage from financial institutions, it has bolstered the informational weight of financial statements and its influence on holding returns. Besides, due to the low coverage, F-Score takes advantage of the slow dissemination of financial information, investing in selected companies before such information is reflected into the share price. 
 
-Conversely, the higher coverage of public-listed companies, coupled with rapid circulation of financial information propelled by recent information technology developments have devalue the significance of financial statements as a source of financial information. Therefore, the application of F-Score on companies in general may be dampenned compared toto financially distressed companies.  
+Conversely, the higher coverage of public-listed companies, coupled with rapid circulation of financial information propelled by recent information technology developments have devalue the significance of financial statements as a source of financial information. This is a prevl Therefore, the application of F-Score on companies in general may be dampenned compared toto financially distressed companies.  
 
 **F-Score Indicators**
 
@@ -438,16 +438,17 @@ Conversely,  the F-Score indicator "Change in number of shares" being slightly p
 
 Regarding the application of F-Score, modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
 
-For applying F-Score in conjunction with practical investment strategies, investors can utilize F-Score to partake in multiple investment method to attain their preferred risk exposure (Company, Sector and Market). These strategies are as follows:-
+For utilizing F-Score in conjunction with practical investment strategies, investors can utilize F-Score to partake in multiple investment method to attain their preferred risk exposure (Company, Sector and Market). These strategies are as follows:-
 
 - Longing high F-Score companies will provide investors exposure to both companies and market risks.
 - Buying the indices will provide investors exposure to market risks, while eliminating company specific risk. 
 - Longing high F-Score and shorting low F-Score (also known as market neutral strategy) will provide company risks exposure and partially eliminate market risks.
 - Execute the above 3 strategies in specific sectors will provide additioanl sector risks exposure.
 
-The reason being for the partially elimination of market risk for long-short strategy is based on the research findings that market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. 
+The reason being for the partially elimination of market risk for long-short strategy is based on the research findings that market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies that include different forms of risks. 
 
-Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies that include different forms of risks. 
+Lastly, investors can take advantage of the simplicity and effectiveness of the F-Score to contruct algorithmic trading software and base its predefined trading rules around F Score's set of indicators. This would highly speed up trading by computerizing and automating the process. Other set rules can be further included to fine-tune trading behaviors, such as incorporating technical analysis and charting techniques to supplement the F-Score, a fundamental analysis technique. 
+
 
 References 
 ---------
