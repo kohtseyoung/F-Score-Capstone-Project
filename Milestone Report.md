@@ -409,7 +409,7 @@ Empirical results show that the effectiveness of F-Score varies accross the year
 |Y2015	|534		|0.053	|-0.323	|0.375		|0.00		|Yes
 |Y2016	|670		|0.323	|-0.011	|0.334		|0.00		|Yes
 |Y2017	|59		|0.219	|0.102	|0.117		|0.43		|**No**
--
+
 **Scatter Line Plot**
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Year.png)
@@ -422,7 +422,7 @@ For Y2017, despite the significant difference between mean returns from the High
 Therefore, we can reject the null hypothesis. The effectiveness of F-Score varies across different years, particularly during times of recession. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return.
 
 
--Conclusion
+Conclusion
 ---------------
 
 F-Score serves as an effective investment analysis tool for identifying share holding returns of companies based on financial performance. The results yields multiple implications in both theoritical and practical asepcts of the F-Score. 
