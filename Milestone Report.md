@@ -142,7 +142,7 @@ To organize the research process and its findings, the report is split into the 
 
 1.	Data Collection
 2.	Data Wrangling
-3.	Research Analysis
+3.	Research Analysis/Findings
 
 Data Collection
 ---------------
