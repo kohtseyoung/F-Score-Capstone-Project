@@ -2,7 +2,7 @@ Milestone Report
 ================
 Abstract
 ----------
-This paper examines the effectiveness of Joseph D. Piotroski’s F-Score as an accounting-based fundamental analysis investment tool across a wide range of public listed firms with varying characteristics. F-Score has been proven to consistently identify and differentiate companies with high returns from low returns, despite originally conceived for the implementation on high book-to-market companies. The performance of F-Score is influeced by external factors such as global economic performance and investors’ confidence. F-Score’s effectiveness is also undermined by the simplicity of its financial indicators, especially when analyzing companies from different sectors, which adopts unique financial reporting format and standards. 
+This paper examines the effectiveness of Joseph D. Piotroski’s F-Score as an accounting-based fundamental analysis investment tool. Originally conceived for the implementation on high book-to-market companies, F-Score has proven to be consistent in identifying and differentiating companies with high returns from low returns when applied across a wide range of public listed firms. F-Score's performance is also influenced by external factors such as global economic performance, especially when identifying companies with high F-scores. Besides, F-Score’s effectiveness is undermined by the simplicity of its financial indicators when analyzing companies from different sectors, which adopts unique financial reporting format and standards. Based on the findings, investors can utilize F-Score to make informed adequate decisions while its limitations into consideration. 
 
 Introduction
 ------------
@@ -40,27 +40,29 @@ The total score is tabulated and companies are split into two main groups, High 
 
 ### Relevancy of F-Score in Today’s Economy
 
-The empirical study of the F-Score is based on companies selected from 1976 and 1996. Since then, in the past 20 years, the overall economy landscape has experience massive seismic shifts; from multiple recessions (Dot.com bubble burst from 1997-2001, The Great Recession from 2007-2012) to the explosive growth of tech-based companies and slow-decline of manufacturing firms. Besides, there have been monumental changes to organization structure of companies, many opting for a more flat-based structure rather than a hierarchical one to cope with the ever-changing economy. This has in-turn impact on how companies’ resources and finances are managed. 
+The empirical study of the F-Score is based on companies selected from 1976 and 1996. Since then, in the past 20 years, the overall economy landscape has experienced massive seismic shifts; from multiple recessions (Dot.com bubble burst from 1997-2001, The Great Recession from 2007-2012) to the explosive growth of tech-based companies and slow-decline of manufacturing firms. Besides, there have been monumental changes to organization structure of companies, many opting for a more flat-based structure rather than a hierarchical one to take advantage of revolutionary IT developments to tackle the ever-changing economy. This has in-turn impact on how companies’ resources and finances are managed. 
 
-While the aforementioned events may undermine the credibility of the F-Score, amongst the many changes, stronger financial regulations and corporate governance have been consistently implemented across the decades, aiming for higher financial reporting transparency and accountability. These developments have strengthened F-Score’s core idea of utilizing historical financial performance data to predict strong performers.  To name one, the enactment of the Sarbanes-Oxley Act also known the “Public Company Accounting Reform and Investor Protection Act in response to the financial scandal revolving Enron mandates strict reforms to improve financial disclosures from  corporations from possibly fraudulent activities. With better financial reporting, financial data provided from companies can be used more reliably for analytic purposes.
+While the aforementioned events may undermine the credibility of the F-Score, amongst the many changes, stronger financial regulations and corporate governance have strengthened F-Score’s core idea of utilizing historical financial performance data to predict strong performers. Financial regulatory compliance has been consistently implemented and its framework improved across the decades, aiming for higher financial reporting transparency and accountability.  To name one, the enactment of the Sarbanes-Oxley Act also known the “Public Company Accounting Reform and Investor Protection Act in response to the financial scandal revolving Enron mandates strict reforms to improve financial disclosures from  corporations from possibly fraudulent activities. With better financial reporting, financial data provided from companies can be used more reliably for analytic purposes.
 
-In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances give rise to strong motivation and purpose to reassess the credibility of the F-Score and modify the indicators accordingly if needed to suit the different stance of today’s economy. 
+In conclusion, while recent economy changes may downplay F-Score’s usefulness, the stringent financial disclosures required from companies serves as an overarching foundation for F-Score due to its heavy reliance on such data. These circumstances give rise to strong motivation and purpose to reassess the credibility of the F-Score and modify the indicators accordingly if needed, to suit the different stance of today’s economy. 
 
 ### Extension of F-Score's Applicability to Non-Financially Distressed Companies
+
+F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. The formation of the F-Score naturally takes into account the specific financial characteristics of such firms. Therefore, F-Score's underlying fundamental theory and rationales should be access to determine its application on non-financially distressed companies. 
 
 **Market Efficiency Hypothesis**
 
 The original F-Score is firmly based on taking advantage of the varying degrees of the Market Efficiency hypothesis, which influence the extent of share prices incorporating financial information.  
 
-The original F-Score states that due to the lack of current financial information of financial distressed companies instigated by low coverage from financial institutions, it has bolstered the informational weight of financial statements and its influence on holding returns. Conversely, taking into account of the rapid dissemination of readily available public information for companies, financial information from financial statements should not have as a significant impact on its holding returns.Therefore, the application of F-Score on companies in general may be dampenned.  
+The original F-Score states that due to the lack of current financial information of financial distressed companies instigated by low coverage from financial institutions, it has bolstered the informational weight of financial statements and its influence on holding returns. Besides, due to the low coverage, F-Score takes advantage of the slow dissemination of financial information, investing in selected companies before such information is reflected into the share price. 
+
+Conversely, taking into account of the rapid circulation of financial information for public-listed companies, financial statements should not have as a significant impact on its holding returns compared to financially distressed companies. Therefore, the application of F-Score on companies in general may be dampenned.  
 
 **F-Score Indicators**
 
-F-Score was originally intended to identify profitable returns from high book-to-market companies which are usually associated with financially distress firms. Therefore, the rationale behind each F-Score’s indicators reflects the performance of such firms while taking their financial characteristics into consideration.
+To assess the applicability of F-Score on all companies, F-Score indicators relevant specifically to high book-to-market companies should be discerned and their basis evaluated. 
 
-Using F-Score as a general tool for evaluating companies’ return regardless of their book-to-market value may not be as effective. To assess the applicability of F-Score on all companies, F-Score indicators relevant specifically to high book-to-market companies should be discerned and their basis evaluated. 
-
-After assessing each indicator, the F-Score Indicator “Change in Number of Shares” stands out as the sole indicator specifically to address high book-to-market companies. As noted from Joseph D. Piotroksi’s F-Score Paper:
+After evaluating each indicator, the F-Score Indicator “Change in Number of Shares” stands out as the sole indicator that specifically address high book-to-market companies. As noted from Joseph D. Piotroksi’s F-Score Paper:
 
 >“….Financially distressed firms that raise external capital could be signalling their inability to generate sufficient internal funds to service future obligations. Moreover, the fact that these firms are willing to issue equity when their stock prices are likely to be depressed (i.e., high cost of capital) highlights the poor financial condition facing these firms”
 
@@ -78,9 +80,9 @@ Thus, the increase in number of shares may also indeed serve as a negative indic
 
 **F-Score Grouping**
 
-Besides assessing F-Score's indicators, some degree of modification to F-Score's original grouping: Low (0-1) and High (8-9) can be considered to assist its applicability on all companies. Although a narrower score proves as a strict criteria in selecting companies, its downside includes a lesser diversification of risk and lower investment opportunites stemming from a smaller invesment pool of companies. The selection of a narrower F-Score in Joseph D. Piotroski's test is mainly to minimize the high risk of investing on financial distressed company, to ensure the companies selected are truly from both ends of the performance spectrum. 
+Besides assessing F-Score's indicators, some degree of modification to F-Score's original grouping: Low (0-1) and High (8-9) can be considered to assist its applicability on all companies. A narrower score band presents as a strict criteria in selecting companies. It helps to minimize the high risk of investing on financial distressed company, ensuring the companies selected are truly from both ends of the performance spectrum. However, the downside of a narrower score band includes lesser diversification of risk and lower investment opportunites stemming from a smaller invesment pool of companies. 
 
-Using F-Score on companies in general, there is more liberty in the grouping of F-Scores from dealing with lower risks. Wes Gray from Alpha Architect and Nehal Joshipura from InvestmentWaves both opted a higher F-Score grouping range: Low (1-3) and High (7-9).   
+Using F-Score on non-financially distressed companies, there is more liberty in the grouping of F-Scores from dealing with lower risks. Wes Gray from Alpha Architect and Nehal Joshipura from InvestmentWaves both opted a higher F-Score grouping range: Low (1-3) and High (7-9).   
 
 Research Motivation
 ------------------
@@ -134,7 +136,7 @@ The overall research process is summarized in the flowchart as follows:
 
 ![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Research%20Layout%20(Modified).png)
 
-As seen from the table above, the main three data sources are from NASDAQ, Morning Star and Yahoo Finance. From these three data sources, the raw data files are company list, income statement, balance sheet, cash flow statement, key ratio share price and industry.  The raw data after processed by R are grouped into the following: F-Score Indicators, Grouping (High/Low) and Holding Return. Lastly, based on the results from the analysis of the processed data, it will provide evidence on whether following the hypotheses raised (Please refer to *Research Analysis* Section) can be confirm or falsify.
+As seen from the table above, the main three data sources are from NASDAQ, Morningsar and Yahoo Finance. From these three data sources, the raw data files are company list, income statement, balance sheet, cash flow statement, key ratio share price and industry.  The raw data after processed by R are grouped into the following: F-Score Indicators, Grouping (High/Low) and Holding Return. Lastly, based on the results from the analysis of the processed data, it will provide evidence on whether following the hypotheses raised (Please refer to *Research Analysis* Section) can be confirm or falsify.
 
 To organize the research process and its findings, the report is split into the following sections to further elaborate on each topic area:-
 
@@ -148,16 +150,16 @@ Data Collection
 
 The sample population of companies used is based from NASDAQ. There is a list of companies listed on NASDAQ available for download in excel format. The total number in the original list is 3288. For completeness of data, companies with insufficient information (etc. Market Cap = 0, no Sector/Industry information) are filtered out. Besides, we also removed companies that belong to the finance sector due to the uniqueness of its financial reporting standard for consistency purposes. The final sample population numbered to 2053.
 
-For financial information that is required for F-Score testing, MorningStar is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
+For financial information that is required for F-Score testing, Morningstar is used due to the consistency in formatting of the relevant financial information. Besides, the extraction of information is relatively straightforward due to the structured format of its web links. The information extracted per company includes 4 data sets: “Income Statement”, “Balance Sheet”, “Cash Flow Statement” and “Key Ratios”. 
 
 ### Share Prices 
-The R Package “Quantmod” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Companies’ information are stored as objects named after companies’ symbols. Similarly to the extraction of information from MorningStar, some companies’ information are not available. These companies are removed from the testing population.
+The R Package “Quantmod” was used to extract companies’ share prices and holding returns from Yahoo Finance based on their respective symbols/tickers. Similarly to the extraction of information from Morningstar, some companies’ information are not available. These companies are removed from the testing population.
 
 
 
 ### Data Collection Limitation & Biases
 
-Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from MorningStar and Yahoo Finance.
+Data Collection is limited by broken links or unavailable data from each data source. 11 companies have been removed from the sample population due to no financial Information (8 companies) and no share price data (3 companies) available respectively from Morningstar and Yahoo Finance.
 
 As the companies tested are those listed on NASDAQ in 2017 for the period 2008-2017, there will be a significant survivorship bias as companies with low performance that are subsequently delisted from the period 2008-2017 would not be part of the testing population. This would inevitably overstate the returns of low F-Score companies.
 
@@ -174,7 +176,7 @@ Before diving head-in into the extraction of the respective indicators, only rel
 
 **_Indicator 1 – Return on Assets (ROA)_**
 
-ROA under F-Score and the ROA under Morning Star are computed differently. The former uses beginning year-end assets, while the latter using average assets as the denominator for computing ROA. F-Score and MorningStar’s ROA shall be coined as ROA(Beginning Assets) and ROA(Average Assets) respectively. As such, we are to re-compute the 1st 5 years ROA using information from the income statement and balance sheet data. For the last 5 years, the beginning of the year assets is recomputed based on the MorningStar’s ROA extracted from the key ratio statement. The formulas are as follows:
+ROA under F-Score and the ROA under Morningstar are computed differently. The former uses beginning year-end assets, while the latter using average assets as the denominator for computing ROA. F-Score and Morningstar’s ROA shall be coined as ROA(Beginning Assets) and ROA(Average Assets) respectively. As such, we are to re-compute the 1st 5 years ROA using information from the income statement and balance sheet data. For the last 5 years, the beginning of the year assets is recomputed based on the Morningstar’s ROA extracted from the key ratio statement. The formulas are as follows:
 
 >Beginning Year Assets = Current Year Net Income/ROA(Average Assets) – Year End Assets
 
@@ -195,9 +197,9 @@ The difference between CFO and ROA as previously computed.
 
 **_Indicator 5 – Change in Leverage (Long-Term) Ratio_**
 
-There is a difference between the denominator of the leverage ratio between F-Score and MorningStar, the former being the average assets during the year, the latter being year-end assets.
+There is a difference between the denominator of the leverage ratio between F-Score and Morningstar, the former being the average assets during the year, the latter being year-end assets.
 The respective leverages shall be coined as Leverage (Average) and Leverage (Year-end) respectively.
-The latest 5 years long-term debt is extracted from MorningStar’s balance sheet while the earliest 5 years are derived from the Leverage (Year-end) extracted from the key ratio statement. The formulas are as follows:
+The latest 5 years long-term debt is extracted from Morningstar’s balance sheet while the earliest 5 years are derived from the Leverage (Year-end) extracted from the key ratio statement. The formulas are as follows:
 
 >Leverage (Average) = Leverage (Year-end)* Year-end Assets /100*Average Assets
 
@@ -226,9 +228,9 @@ As noted under the literature review, instead of adhering to the original score 
 
 ### 2. Financial Fiscal Date Period
 
-Having selected companies from a list under NASDAQ in 2017/2018, some of these companies would not have been publicly listed for the entire past 10 years since 2008. Therefore, the holding period of these companies would be based on public listed date up till 2017 or its delisted date, whichever earlier. Such information is gathered based on two fronts, from the availability of financial data and trading share price on MorningStar and Yahoo Finance respectively. Only under the circumstance that information is available from both sources for the same period, F-Score can be computed.
+Having selected companies from a list under NASDAQ in 2017/2018, some of these companies would not have been publicly listed for the entire past 10 years since 2008. Therefore, the holding period of these companies would be based on public listed date up till 2017 or its delisted date, whichever earlier. Such information is gathered based on two fronts, from the availability of financial data and trading share price on Morningstar and Yahoo Finance respectively. Only under the circumstance that information is available from both sources for the same period, F-Score can be computed.
 
-**Availability of Financial Information from MorningStar**
+**Availability of Financial Information from Morningstar**
 
 
 Under the assumption that a company is not publicly-listed based if the company does not have any shares/equity, shares is used as an indicator to identify the company’s start and end date. There is no needed to take end date/delisting date into account as using the list of companies extracted from NASDAQ in 2017/2018 already nullify this potential issue. 
@@ -282,7 +284,7 @@ Empirical results show that F-Score still maintains its effectiveness in identif
 
 From the T-test performed, there is a signficant difference between High and Low F-Score holding returns at 95% confidence. Therefore, we can reject the null hypothesis. As seen from the summary data, High F-Score have an additional mean returns of 26.8% compared to Low F-Score companies. Besides, High F-Score companies also have lower returns volatilty compared to Low F-Score companies as inferred from the summary data and plots. 
 
-There are more High F-Score companies in the sample as compared to Low F-Score is mainly due to the survivorship biases of the company list selected. As explained, this would positively skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present between High and Low F-Score companies.
+There are more High F-Score companies in the sample as compared to Low F-Score due to the survivorship biases of the company list selected. As explained, this would positively skew the mean return of Low F-Score companies. It should be noted that despite the overstatement of returns of low F-Score companies, there is still a significant difference present between High and Low F-Score companies.
 
 Therefore, companies with High F-Score possess higher returns and lower return volailty, translating to lower investment risk compared to companies with Low F-Score. 
 
@@ -312,7 +314,7 @@ Empirical results show that the original F-Score grouping can optionally include
 
 As seen from the data above, there is steady increase in mean returns across the F-Score. Additionally, it also should be noted from the summary table that that there is significant changes in returns between the following F-Scores: "1 -> 2", "3 -> 8", "8-9". Focusing on these three significant increase, F-Score 1 higher returns is countered by its high return volality (the highest Standard Deviation).  F-Scores from 3 to 8 shows to have both higher returns and lower return volatility than its previous scores. For "8-9", F-Score 8 despite having higher returns, it also suffered from a slightly higher return volatity compared to F-Score 9. 
 
-From the results of TukeyHD test, the 9 F-Scores returns have significant difference between all scores. This finding enables a high flexiblity and autonomy for the assignment of F-Score into the Low and High groups. 
+From the results of TukeyHD test, the 9 F-Scores returns can be split into 6 groups in total. The significant difference between most scores shows that there can be a high flexiblity and autonomy for the assignment of F-Score into the Low and High groups. 
 
 
 **Sharpe Ratio Analysis**
@@ -332,7 +334,7 @@ From the results of TukeyHD test, the 9 F-Scores returns have significant differ
 
 Sharpe Ratio analysis is further performed to determine the trade-off of excess returns per risk (Standard Deviation) for each F-Scores, enabling more informed judgment for the most suitable groupings for both High and Low groups.
 
-Comparing the results from above to the original F-Score groupings, it make sense to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above (the lowest 3 Sharpe Ratio). On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis due to having the top 3 Sharpe Ratio.
+Comparing the results from above to the original F-Score groupings, it is reasonable to include F-Score 1-3 as Low F-Score Group due to both low returns and high return volality as seen from the table above (the lowest 3 Sharpe Ratio). On the other hand, F-Score 7-9 as High F-Score is also a reasonable basis due to having the top 3 Sharpe Ratio.
 
 Therefore, although we can reject the null hypothesis as noted from the TukeyHD Test, the original F-Score grouping is still effective in grouping company with high and low returns seperately. However, investors can consider including other F-Scores into both groups, specifically 2-3 into Low F-Score and 7 into High F-Score in order to enchance returns, based on their risk and return trade-off preferences.
 
