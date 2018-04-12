@@ -364,7 +364,6 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 **Summary Data**
 
-
 |Sectors		|No. Samples 	|High F-Score Mean 	|Low F-Score Mean	|Difference	|P-value|Significant at 95?|
 |:---------------------:|:-----------:	|:---------------------:|:---------------------:|:-------------:|:-----:|:-------------:|
 |Technology		|836		|0.242			|-0.008			|0.251		|0.0000		|Yes	|	
@@ -381,4 +380,84 @@ Empirical results show that the effectiveness of F-Score varies across different
 
 **Scatter Line Plot**
 
-![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/Scatter
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Sector_Part2.png)
+
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Sector_Part1.png)
+
+As inferred from the data above, F-Score does not serve as an effective investment tool for companies in the following sectors: Public Utilities, Energy and Consumer Non-Durables. This is especially true for companies in th ePublic Utilities sector as the mean returns for its Low F-Score group is higher than the High F-Score group.
+
+As noted under Literature Review, F-Score effectiveness is heavily reliant on the sectors’ financial reporting format. Similarly to companies from the finance sector, companies from the Energy and Public Utilities sector have to adhere to financial reporting standards unique to their sectors. This would dampen the explanatory power of F-Score indicators.
+
+Lastly for Consumer Non-Durables, the high P-value is mainly due to its high Low F-Score mean returns. In particular, companies from the Food Distribution industry presents skewed the returns from Low F-Score companies. However, the specifc reason cannot be accurately identified whether its due to outliers or the nature of such business, based on its low sample size (2 companies).
+
+Therefore, we cannot reject the null hypothesis that there is no difference between High F-Score and Low F-Score group’s market adjusted return for majority of Sectors tested, with the exception of Public Utilities, Energy and Consumer Non-Durables sectors.
+
+### Hypothesis 5
+
+Empirical results show that the effectiveness of F-Score varies accross the years.
+
+**Data Summary**
+
+|Year	|No. Sample	|High	|Low	|Differences	|P-value	|Significant at 95%?
+|:-----:|:-------------:|-----:|:-----:|:-------------:|:-------------:|:-----:|
+|Y2009	|342		|0.514	|0.434	|0.080		|0.24		|**No**
+|Y2010	|412		|0.274	|0.142	|0.132		|0.03		|Yes
+|Y2011	|401		|0.078	|-0.094	|0.171		|0.00		|Yes
+|Y2012	|353		|0.243	|0.062	|0.180		|0.00		|Yes
+|Y2013	|427		|0.362	|0.156	|0.206		|0.00		|Yes
+|Y2014	|491		|0.168	|-0.093	|0.262		|0.00		|Yes
+|Y2015	|534		|0.053	|-0.323	|0.375		|0.00		|Yes
+|Y2016	|670		|0.323	|-0.011	|0.334		|0.00		|Yes
+|Y2017	|59		|0.219	|0.102	|0.117		|0.43		|**No**
+-
+**Scatter Line Plot**
+
+![](https://github.com/kohtseyoung/F-Score-Capstone-Project/blob/master/Images/Plots/ScatterPlot_Group_Year.png)
+
+As shown from the data above, F-Score is inconsistent in identifying companies with stronger returns and weaker returns across the years. This inconsistency is noted only for Y2009 and Y2017, F-Score remains effective from Y2014 to Y2017.  
+
+For Y2009, a possible explanation would be due to the 2008 – 2009 World Financial Crisis, obstructing the effectiveness of the F-Score indicator. As previously noted, F-Score is used to identify companies with superior financial performance, which in-turn should reflect stronger holding returns. However, holding returns are not solely affected by companies’ performance. Global economy, regional economy and investors’ confidence also plays a significant role in determining holding returns. Nevertheless, it can be argued that such factors should have an effect on companies from both high and low groups, thus the difference based solely on financial performance should remain significant. In light of such results, economic downturn can be inferred to have a higher impact on higher performing companies.  
+For Y2017, despite the significant difference between mean returns from the High and Low F Score group, the high P-value is due to high standard error and volatility, contributed by its low sample size. For future testing, an increase in sample size would assist in reducing the P-Value. 
+
+Therefore, we can reject the null hypothesis. The effectiveness of F-Score varies across different years, particularly during times of recession. F-Score should not be the sole means for investors to identify profitable companies but a complimentary one. This is because financial performance is not the only factor that determines a company’s holding return.
+
+
+-Conclusion
+---------------
+
+F-Score serves as an effective investment analysis tool for identifying share holding returns of companies based on financial performance. The results yields multiple implications in both theoritical and practical asepcts of the F-Score. 
+
+### Theortical aspect
+
+In light of the ability to earn higher returns through F-Score analysis, this proposes that share prices does not timely incorporate and reflect all readily financial information. The weak market hypothesis holds true not only for finanlly distressed companies but also liquid publicly traded companies. Besides F-Score, this has in turn promotes the general use of fundamental analysis that is heavily based on the assumption of this financial theory.
+
+Conversely,  the F-Score indicator "Change in number of shares" being slightly positively correlated with holding returns for low F-Score companies is in violation of the Pecking Order Theory. Besides, from the results shown, investors place a heavier emphasis on capital structure changes for company experiencing low financial performance. This shows that this indicator does not functions as an effective gauge for companies in general. A suggestion for further research may include applying different weightage on each indicator to distinguish and maximise F-Score's explanatory power for non-financial distressed companies.   
+
+### Practical aspect
+
+Regarding the application of F-Score, modification can be made to further enhance the returns such as by extending the F-Score groupings or focus specifically on certain industries. Nevertheless, relying solely on financial performance to predict holding returns is not as effective as returns are affected by both company and economic specific factors.  Although it can be argued that economic specific factors are already reflected in the companies’ performance, it also plays a big role in influencing investors’ confidence and trading tendencies. 
+
+For utilizing F-Score in conjunction with practical investment strategies, investors can utilize F-Score to partake in multiple investment method to attain their preferred risk exposure (Company, Sector and Market). These strategies are as follows:-
+
+- Longing high F-Score companies will provide investors exposure to both companies and market risks.
+- Buying the indices will provide investors exposure to market risks, while eliminating company specific risk. 
+- Longing high F-Score and shorting low F-Score (also known as market neutral strategy) will provide company risks exposure and partially eliminate market risks.
+ -Execute the above 3 strategies in specific sectors will provide additioanl sector risks exposure.
+
+The reason being for the partially elimination of market risk for long-short strategy is based on the research findings that market risk has a higher impact on high F-Score companies compared to low F-Score companies. Therefore, the market risks cannot be equally offset from the long-short investment strategy. Nevertheless, it should be noted that F-Score is only solely capable of assessing company's risk. Therefore, it is recommended to incorporate other forms of analysis, especially when the selected investment strategies that include different forms of risks. 
+
+Lastly, investors can take advantage of the simplicity and effectiveness of the F-Score to contruct algorithmic trading software and base its predefined trading rules around F Score's set of indicators. This would highly speed up trading by computerizing and automating the process. Other set rules can be further included to fine-tune trading behaviors, such as incorporating technical analysis and charting techniques to supplement the F-Score, a fundamental analysis technique. 
+
+
+References 
+----------
+1) Piotroski, J. (2000). Value Investing: The Use of Historical Financial Statement Information to Separate Winners from Losers. Journal of Accounting Research
+
+2) Markus Mohr, J. (2018). Utility of Piotroski F-Score for predicting Growth-Stock Returns.
+
+3) Joshipura, N. (2018). Piotroski’s F-Score: The science of value investing. [online] Moneycontrol. Available at: https://www.moneycontrol.com/news/business/personal-finance/piotroskis-f-score-the-science-of-value-investing-2249957.html [Accessed 12 Apr. 2018].
+
+4) Gray, W. (2018). Value Investing Research: Simple Methods to Improve the Piotroski F-Score. [online] Alpha Architect. Available at: https://alphaarchitect.com/2015/05/05/value-investing-research-simple-methods-to-improve-the-piotroski-f-score/ [Accessed 12 Apr. 2018].
+
+
+
