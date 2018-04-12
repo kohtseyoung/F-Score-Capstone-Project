@@ -18,10 +18,15 @@ companylist <- companylist %>% mutate (
 #-------- Creating new table for Companies' Details for future merges--------
 
 #creating companies name and symbol list
-company_name_symbol <-data.frame(companylist$Symbol,companylist$Name,companylist$Sector,companylist$Industry)
+company_name_symbol <-data.frame(companylist$Symbol,
+                                 companylist$Name,
+                                 companylist$Sector,
+                                 companylist$Industry)
+
 colnames(company_name_symbol) <- c("Symbol","Name","Sector","Industry")
 
-write.csv(companylist,file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+write.csv(companylist,
+          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
 
 
 #-------- Creating Full Balance Sheet Data Set--------
@@ -68,7 +73,8 @@ Company_BalanceSheet<-rbindlist(Company_BalanceSheet,
 Company_BalanceSheet <- left_join(Company_BalanceSheet,company_name_symbol_fiscalmonth,
                                   by="Symbol")
 
-write.csv(Company_BalanceSheet,file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS).csv")
+write.csv(Company_BalanceSheet,
+          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS).csv")
 
 #To create a list of companies without data
 CompanyBalanceSheet_Leftout_Link <- subset(Company_BalanceSheet,
@@ -98,6 +104,7 @@ CompanyBalanceSheet_Final <-subset(CompanyBalanceSheet_Final,
 #Renaming column names
 colnames(CompanyBalanceSheet_Final)[1:7] <- c("Balance_Sheet_Items","Y2013","Y2014","Y2015","Y2016","Y2017","TTM") 
 
-write.csv(CompanyBalanceSheet_Final,file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS Final).csv")
+write.csv(CompanyBalanceSheet_Final,
+          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS Final).csv")
 
                   
