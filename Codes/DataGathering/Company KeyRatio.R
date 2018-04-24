@@ -7,7 +7,7 @@ library(data.table)
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #adding Key Ratios Links
 companylist <- companylist %>% mutate (
@@ -26,7 +26,7 @@ company_name_symbol <-data.frame(companylist$Symbol,
 colnames(company_name_symbol) <- c("Symbol","Name","Sector","Industry")
 
 write.csv(companylist,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+          file="companylinks.csv")
 
 #-------- Creating Full Key Ratio Data Set--------
 
@@ -69,7 +69,7 @@ Company_KeyRatio <- left_join(Company_KeyRatio,company_name_symbol_fiscalmonth,
                               by="Symbol")
 
 write.csv(Company_KeyRatio,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(KR).csv")
+          file="companylist(KR).csv")
 
 #No reattempts as datasets are very complete in the 1st attempt of data collection
 CompanyKeyRatio_Final <-subset(Company_KeyRatio,
@@ -83,4 +83,4 @@ CompanyKeyRatio_Final <-subset(CompanyKeyRatio_Final,
 colnames(Company_KeyRatio)[1:12] <-c("Key_Ratio_Items","Y2008","Y2009","Y2010","Y2011","Y2012","Y2013","Y2014","Y2015","Y2016","Y2017","TTM")
 
 write.csv(CompanyKeyRatio_Final,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(KR Final).csv")
+          file="companylist(KR Final).csv")
