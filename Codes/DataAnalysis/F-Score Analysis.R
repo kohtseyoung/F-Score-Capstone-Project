@@ -13,15 +13,15 @@ library(Hmisc)
 library(wesanderson)
 
 #To read Company F-Scores and Returns
-Company_F_Score_Full <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\F_Score_Full_Final.csv")
-Company_Returns <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Quaterly_Return_Final.csv")
-Company_F_Score_Fiscal_Year <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Holding_Period_Matrix.csv")
-Company_Low_Trading_Volume<-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Volume_Low_Trades.csv")
-Company_F_Score_Classes <- read.csv(file="C:/Users/Tse Young/Desktop/F_Score_Tally_Full_Final.csv")
+Company_F_Score_Full <-read.csv(file="F_Score_Full_Final.csv")
+Company_Returns <-read.csv(file="Company_Holding_Quaterly_Return_Final.csv")
+Company_F_Score_Fiscal_Year <- read.csv(file="Holding_Period_Matrix.csv")
+Company_Low_Trading_Volume<-read.csv(file="Company_Volume_Low_Trades.csv")
+Company_F_Score_Classes <- read.csv(file="F_Score_Tally_Full_Final.csv")
 
 #-------- Creating Full Key Ratio Data Set--------
 
-Company_KeyRatio <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Key Ratios\\companylist(KR Final).csv")
+Company_KeyRatio <- read.csv(file="companylist(KR Final).csv")
 Company_KeyRatio <-Company_KeyRatio[,c(2:18)]
 
 head(Company_KeyRatio)
@@ -103,9 +103,9 @@ head(Company_F_Score_Returns_Volume_Filtered)
 
 
 write.csv(Company_F_Score_Grouping_Only_Volume_Filtered,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\FScore_Group.csv")
+          file="FScore_Group.csv")
 write.csv(Company_F_Score_Returns_Full,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\FScore_Group_Full.csv")
+          file="FScore_Group_Full.csv")
 
 
 #Convert F Score into Factor levels 
@@ -115,7 +115,7 @@ Company_F_Score_Returns_Volume_Filtered$F.Score <- as.factor(Company_F_Score_Ret
 #---------Adding additional data such as PE_Ratio, Sectors and F-Score Classes----------#
 
 #Add PE_Ratio
-PE_Ratio <- read.csv("C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_PE_Ratio_Modified.csv")
+PE_Ratio <- read.csv("Company_PE_Ratio_Modified.csv")
 PE_Ratio_Clean<- PE_Ratio[,c(5,6,11)]
 PE_Ratio_Clean <- PE_Ratio_Clean %>% mutate(PE_Ratio = ifelse(Modified_PE_Ratio>0 & Modified_PE_Ratio<100,Modified_PE_Ratio,0))
 
@@ -129,7 +129,7 @@ Company_F_Score_Returns_Volume_Filtered_PE <- left_join(Company_F_Score_Returns_
 head(Company_F_Score_Returns_Volume_Filtered_PE)
 
 #Add Sectors
-Company_Industy <-read.csv("C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+Company_Industy <-read.csv("companylinks.csv")
 Company_Industry_Clean <- Company_Industy[,c(2,8,9)]
 Company_F_Score_Grouping_Only_Volume_Filtered_PE_Industry <- left_join(Company_F_Score_Grouping_Only_Volume_Filtered_PE,
                                                                        Company_Industry_Clean,
@@ -141,7 +141,7 @@ Company_F_Score_Returns_Volume_Filtered_PE_Industry <- left_join(Company_F_Score
 Company_F_Score_Returns_Volume_Filtered_PE_Industry <- Company_F_Score_Returns_Volume_Filtered_PE_Industry[,-4]
 head(Company_F_Score_Returns_Volume_Filtered_PE_Industry)
 write.csv(Company_F_Score_Returns_Volume_Filtered_PE_Industry,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\PE_Industry_Filtered.csv")
+          "PE_Industry_Filtered.csv")
 
 
 
@@ -157,7 +157,7 @@ Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes$F.Score <- as.intege
 head(Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes)
 
 write.csv(Company_F_Score_Returns_Volume_Filtered_PE_Industry_Classes,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\PE_Industry_Classes_Filtered.csv")
+          "PE_Industry_Classes_Filtered.csv")
 
 
 ##################################################################################################################################
