@@ -7,7 +7,7 @@ library(data.table)
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #adding Income Statement Links 
 companylist <- companylist %>% mutate (IS_Link=paste("http://financials.morningstar.com/ajax/ReportProcess4CSV.html?&t=XNAS:",
@@ -26,7 +26,7 @@ company_name_symbol <-data.frame(companylist$Symbol,
 colnames(company_name_symbol) <- c("Symbol","Name","Sector","Industry")
 
 write.csv(companylist,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+          file="companylinks.csv")
 
 #-------- Creating Full Income Statement Data Set--------
 
@@ -76,7 +76,7 @@ Company_IncomeStatement <- left_join(Company_IncomeStatement,company_name_symbol
                                      by="Symbol")
 
 write.csv(Company_IncomeStatement,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(IS).csv")
+          file="companylist(IS).csv")
 
 #To create a list of companies without data
 CompanyIncomeStatement_Leftout_Link <- subset(Company_IncomeStatement,
@@ -90,7 +90,7 @@ CompanyIncomeStatement_Leftout <- rbindlist(CompanyIncomeStatement_Leftout,
                                             fill=TRUE
                                             
 write.csv(CompanyIncomeStatement_Leftout,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(IS Left).csv")
+          file="companylist(IS Left).csv")
 
 #Final dataset of companies without data
 CompanyIncomeStatement_Leftout_Link2 <- subset(CompanyIncomeStatement_Leftout,
@@ -111,4 +111,4 @@ CompanyIncomeStatement_Final <-subset(CompanyIncomeStatement_Final,
 colnames(CompanyIncomeStatement_Final)[1:7] <- c("Income_Statement_Items","Y2013","Y2014","Y2015","Y2016","Y2017","TTM") 
                                             
 write.csv(CompanyIncomeStatement_Final,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(IS Final).csv")
+          file="companylist(IS Final).csv")
