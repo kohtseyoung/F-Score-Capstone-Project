@@ -10,7 +10,7 @@ WoW <- new.env()
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #-------------Loading Returns Data using quantmod---------------------
 
@@ -61,10 +61,10 @@ Company_Symbol_List <- mget(ls(WoW),envir= WoW)
   ga_Volume_Average_Low_NaN$Year <-gsub('^','Y',ga_Volume_Average_Low_NaN$Year)
 
   write.csv(ga_Volume_Average_Low_NaN,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Volume_Low_Trades.csv")
+          "Company_Volume_Low_Trades.csv")
 
   write.csv(ga_Volume_Average,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Volume_Trades.csv")
+          "Company_Volume_Trades.csv")
 
 
 
@@ -113,13 +113,13 @@ SP_Average_MCAP <- left_join(SP_Average_MCAP,Total_MCAP)
 SP_Average_MCAP <- SP_Average_MCAP %>% mutate (Weigthed_Cap = Market_Cap/Total_MCAP)
 
 write.csv(SP_Average_MCAP,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Weight_Cap.csv")
+          "Company_Weight_Cap.csv")
 
 
-####Average P/E  (Currently not in-used for current testing)
+####Average P/E 
 
   #Read KR Ratio
-  Company_KeyRatio <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Key Ratios\\companylist(KR Final).csv")
+  Company_KeyRatio <- read.csv(file="companylist(KR Final).csv")
   Company_CashFlow <-Company_CashFlow[,c(3:14)]
 
   #EPS
@@ -172,11 +172,11 @@ write.csv(SP_Average_MCAP,
   head(PE_KR_Gather)
 
   write.csv(PE_KR_Gather,
-            "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_PE_Ratio.csv")
+            "Company_PE_Ratio.csv")
 
 
   # To convert PE_Ratio Returns to USD
-  PE_Ratio <- read.csv("C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_PE_Ratio.csv")
+  PE_Ratio <- read.csv("Company_PE_Ratio.csv")
   PE_Ratio$Currency <- str_sub(PE_Ratio$Items, start=-3)
   PE_Ratio$Currency <- gsub("$","/USD",PE_Ratio$Currency)
   PE_Ratio$Items <- str_sub(PE_Ratio$Items, start=1, end=18)
@@ -200,4 +200,4 @@ write.csv(SP_Average_MCAP,
   head(PE_Ratio)
 
   write.csv(PE_Ratio,
-            "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_PE_Ratio_Modified.csv")
+            "Company_PE_Ratio_Modified.csv")
