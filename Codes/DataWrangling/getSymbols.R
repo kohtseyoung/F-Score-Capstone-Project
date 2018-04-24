@@ -9,11 +9,11 @@ WoW <- new.env()
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #-------- Creating Full Key Ratio Data Set--------
 
-Company_KeyRatio <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Key Ratios\\companylist(KR Final).csv")
+Company_KeyRatio <- read.csv(file="companylist(KR Final).csv")
 Company_KeyRatio <-Company_KeyRatio[,c(2:18)]
 head(Company_KeyRatio)
 
@@ -92,7 +92,7 @@ NumberShares <- NumberShares[,c(12,1,2:11)]
 NumberShares <-gather(NumberShares,"Year","Dates",3:12)
 
 write.csv(NumberShares,
-          file="C:\\Users\\Tse Young\\Desktop\\NumberShares.csv")
+          file="NumberShares.csv")
 
 #--------------Determining exact fiscal start dates of each company based on number of shares and fiscal month end------------
 
@@ -188,7 +188,7 @@ chickennnn <- mget(ls(WoW),
                    envir= WoW) 
 
 write.csv(company_not_available,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\company_not_available.csv")
+          "company_not_available.csv")
 
 #------------Extracting quarterly returns-------------------
 
@@ -418,9 +418,9 @@ yearlow_quaterly_all <-  left_join(yearlow_quaterly_Q1_Clean, yearlow_quaterly_Q
 head(yearlow_quaterly_all)
 
 write.csv(yearlow_quaterly,
-          file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly.csv")
+          file="yearlow_quaterly.csv")
 write.csv(yearlow_quaterly_all,
-          file="C:\\Users\\Tse Young\\Desktop\\yearlow_quaterly_all.csv")
+          file="yearlow_quaterly_all.csv")
 
 
 
@@ -559,7 +559,7 @@ head(Holding_Period_Matrix)
 head(Holding_Period)
 
 write.csv(Holding_Period_Matrix,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Holding_Period_Matrix.csv")
+          "Holding_Period_Matrix.csv")
 
 #Combining yearly returns with holding period matrix
 modified_return_quaterly <- inner_join(yearlow_quaterly_all,Holding_Period_Matrix)
@@ -584,7 +584,7 @@ modified_return_quaterly_clean$Quarter <- substr(modified_return_quaterly_clean$
 head(modified_return_quaterly_clean)
 
 write.csv(modified_return_quaterly_clean,
-          "C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Company_Holding_Quaterly_Return_Final.csv")
+          "Company_Holding_Quaterly_Return_Final.csv")
 
 
 
