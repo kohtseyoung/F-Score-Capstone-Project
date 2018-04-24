@@ -7,7 +7,7 @@ library(data.table)
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #adding Balance Sheet Links
 companylist <- companylist %>% mutate (
@@ -26,7 +26,7 @@ company_name_symbol <-data.frame(companylist$Symbol,
 colnames(company_name_symbol) <- c("Symbol","Name","Sector","Industry")
 
 write.csv(companylist,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+          file="companylinks.csv")
 
 
 #-------- Creating Full Balance Sheet Data Set--------
@@ -74,7 +74,7 @@ Company_BalanceSheet <- left_join(Company_BalanceSheet,company_name_symbol_fisca
                                   by="Symbol")
 
 write.csv(Company_BalanceSheet,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS).csv")
+          file="companylist(BS).csv")
 
 #To create a list of companies without data
 CompanyBalanceSheet_Leftout_Link <- subset(Company_BalanceSheet,
@@ -88,7 +88,7 @@ CompanyBalanceSheet_Leftout <- rbindlist(CompanyBalanceSheet_Leftout,
                                          fill=TRUE)
 
 write.csv(CompanyBalanceSheet_Leftout,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS Left).csv")
+          file="companylist(BS Left).csv")
 
 #To combine datasets from data collection attempt 1 & 2
 CompanyBalanceSheet_Final <-rbind(
@@ -105,6 +105,6 @@ CompanyBalanceSheet_Final <-subset(CompanyBalanceSheet_Final,
 colnames(CompanyBalanceSheet_Final)[1:7] <- c("Balance_Sheet_Items","Y2013","Y2014","Y2015","Y2016","Y2017","TTM") 
 
 write.csv(CompanyBalanceSheet_Final,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(BS Final).csv")
+          file="companylist(BS Final).csv")
 
                   
