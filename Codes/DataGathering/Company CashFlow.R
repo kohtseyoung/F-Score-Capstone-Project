@@ -7,7 +7,7 @@ library(data.table)
 #-------- Loading Data from Morning Star Links--------
 
 #load NASDAQ company list
-companylist <-read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(Final).csv")
+companylist <-read.csv(file="companylist(Final).csv")
 
 #adding Cash Flow Links
 companylist <- companylist %>% mutate (
@@ -26,7 +26,7 @@ company_name_symbol <-data.frame(companylist$Symbol,
 colnames(company_name_symbol) <- c("Symbol","Name","Sector","Industry")
 
 write.csv(companylist,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylinks.csv")
+          file="companylinks.csv")
 
 
 #-------- Creating Full Cash Flow Data Set--------
@@ -71,7 +71,7 @@ Company_CashFlow <- left_join(Company_CashFlow,company_name_symbol_fiscalmonth,
                               by="Symbol")
 
 write.csv(Company_CashFlow,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(CF).csv")
+          file="companylist(CF).csv")
 
 #To create a list of companies without data
 CompanyCashFlow_Leftout_Link <- subset(Company_CashFlow,
@@ -84,7 +84,7 @@ CompanyCashFlow_Leftout <- lapply(CompanyCashFlow_Leftout_Link$Source,
 CompanyCashFlow_Leftout <- rbindlist(CompanyCashFlow_Leftout,
                                      fill=TRUE)
 write.csv(CompanyCashFlow_Leftout,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(CF Left).csv")
+          file="companylist(CF Left).csv")
 
 #Final set of companies without data
 CompanyCashFlow_Leftout_Link2 <- subset(CompanyCashFlow_Leftout,
@@ -106,6 +106,6 @@ CompanyCashFlow_Final <-subset(CompanyCashFlow_Final,
 colnames(CompanyCashFlow_Final)[1:7] <- c("Cash_Flow_Items","Y2013","Y2014","Y2015","Y2016","Y2017","TTM") 
 
 write.csv(CompanyCashFlow_Final,
-          file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\companylist(CF Final).csv")
+          file="companylist(CF Final).csv")
 
 
