@@ -7,10 +7,10 @@ library(data.table)
 
 ##################################### Inputting respective financial datas #########################################
 
-Company_IncomeStatement <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Income Statement\\companylist(IS Final).csv")
-Company_CashFlow <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Cash FLow\\companylist(CF Final).csv")
-Company_BalanceSheet <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Balance Sheet\\companylist(BS Final).csv")
-Company_KeyRatio <- read.csv(file="C:\\Users\\Tse Young\\Desktop\\Data Science research\\F-score\\Company List\\Full Data Set\\Key Ratios\\companylist(KR Final).csv")
+Company_IncomeStatement <- read.csv(file="companylist(IS Final).csv")
+Company_CashFlow <- read.csv(file="companylist(CF Final).csv")
+Company_BalanceSheet <- read.csv(file="companylist(BS Final).csv")
+Company_KeyRatio <- read.csv(file="companylist(KR Final).csv")
 
 
 Company_IncomeStatement <- Company_IncomeStatement[,c(3:14)]
@@ -417,13 +417,13 @@ str(Indicator9)
   AllIndicators <-rbind(Indicators_PositiveSignal,Indicators_NegativeSignal)
                                                  
   write.csv(AllIndicators,
-          file="C:/Users/Tse Young/Desktop/AllIndicators.csv")
+          file="AllIndicators.csv")
                                                  
   AllIndicators_Clean <- AllIndicators[,c(3,1:2,4,5)]
   head(AllIndicators_Clean)
                                                  
   write.csv(AllIndicators_Clean,
-          file="C:a/Users/Tse Young/Desktop/AllIndicators_Clean.csv")
+          file="AllIndicators_Clean.csv")
 
 
   #Tabulating F-Score
@@ -431,7 +431,7 @@ str(Indicator9)
   colnames(F_Score_Tally)[3] <- "F-Score"
                                                  
   write.csv(F_Score_Tally,
-          file="C:/Users/Tse Young/Desktop/F_Score_Tally.csv")
+          file="F_Score_Tally.csv")
 
   F_Score_Full_Amount <- spread(AllIndicators_Clean[1:4],Items,Amount)
   F_Score_Full_Score <- spread(AllIndicators_Clean[,c(1:3,5)],Items,Score)
@@ -440,7 +440,7 @@ str(Indicator9)
   head(F_Score_Full_Score)
 
   write.csv(F_Score_Full_Final,
-          file="C:/Users/Tse Young/Desktop/F_Score_Full_Final.csv")
+          file="F_Score_Full_Final.csv")
 
   #Classifying F_Score Indicators into their specific F_Score Classes 
 
@@ -461,7 +461,7 @@ str(Indicator9)
 
 
   write.csv(F_Score_Classes_Tally_Gather,
-          file="C:/Users/Tse Young/Desktop/F_Score_Tally_Full_Final.csv")
+          file="F_Score_Tally_Full_Final.csv")
 
 
 
@@ -487,18 +487,18 @@ str(Indicator9)
   #Merging both signals
   AllIndicators_Modified <-rbind(Indicators_Modified_PositiveSignal,Indicators_Modified_NegativeSignal)
   write.csv(AllIndicators_Modified,
-            file="C:/Users/Tse Young/Desktop/AllIndicators_Modified.csv")
+            file="AllIndicators_Modified.csv")
   AllIndicators_Modified_Clean <- AllIndicators_Modified[,c(3,1:2,4,5)]
   head(AllIndicators_Modified_Clean)
   write.csv(AllIndicators_Modified_Clean,
-            file="C:a/Users/Tse Young/Desktop/AllIndicators_Modified_Clean.csv")
+            file="AllIndicators_Modified_Clean.csv")
 
 
   #Tabulating F-Score
   F_Score_Modified_Tally <- as.data.table(AllIndicators_Clean)[, sum(Score), by = .(Symbol, Year)]
   colnames(F_Score_Modified_Tally)[3] <- "F-Score"
   write.csv(F_Score_Modified_Tally,
-            file="C:/Users/Tse Young/Desktop/F_Score_Modified_Tally.csv")
+            file="F_Score_Modified_Tally.csv")
 
   F_Score_Modified_Full_Amount <- spread(AllIndicators_Clean[1:4],Items,Amount)
   F_Score_Modified_Full_Score <- spread(AllIndicators_Clean[,c(1:3,5)],Items,Score)
@@ -507,7 +507,7 @@ str(Indicator9)
   head(F_Score_Modified_Full_Score)
 
   write.csv(F_Score_Modified_Full_Final,
-            file="C:/Users/Tse Young/Desktop/F_Score_Modified_Full_Final.csv")
+            file="F_Score_Modified_Full_Final.csv")
 
 
 
