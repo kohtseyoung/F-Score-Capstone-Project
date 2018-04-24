@@ -1,7 +1,7 @@
 Cornerstone Project Proposal
 ==============================
 
-1) Piotroski F-Score
+Piotroski F-Score
 -----------------
 ### What does it do?
 
@@ -16,7 +16,7 @@ What can be done?
 Companies on major indices such as S&P,NASDAQ and Dow Jones are easy to acquire. However, while acquiring company’s financial information in terms of breath is not an issue, depth is limited as most financial information websites provides up to 5 years of historical data.
 
 
-2) Fundamental Analysis Models in Financial Markets
+Fundamental Analysis Models in Financial Markets
 -----------------
 
 ### What does it do?
